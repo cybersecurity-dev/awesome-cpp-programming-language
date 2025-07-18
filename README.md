@@ -86,8 +86,8 @@
 #### [Modules](https://en.cppreference.com/w/cpp/language/modules.html)
 
 ### [C++23](https://en.wikipedia.org/wiki/C%2B%2B23) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/playlist?list=PL9V4Zu3RroiUDgZNWp3jEfVCekz3zyqlR&si=9ydOxTrqNAMecWHX)
-
-#### [mdspan](https://en.cppreference.com/w/cpp/container/mdspan.html)
+#### [std::generator](https://en.cppreference.com/w/cpp/coroutine/generator.html)
+#### [std::mdspan](https://en.cppreference.com/w/cpp/container/mdspan.html)
 
 ### [C++26](https://en.wikipedia.org/wiki/C%2B%2B26) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/playlist?list=PL9V4Zu3RroiUMnYOdxU8Qyl58Y8d65csM&si=UT8y6spBSphgR1le)
 
