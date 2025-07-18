@@ -49,6 +49,7 @@
 ## Severals
 - [JSON for Modern C++](https://github.com/nlohmann/json) - [JSON](https://json.nlohmann.me/) for Modern C++.
 - [spdlog](https://github.com/gabime/spdlog) - Fast C++ logging library.
+- [pybind11](https://github.com/pybind/pybind11) - Seamless [operability](https://pybind11.readthedocs.io/en/stable/) between C++11 and Python.
 
 ## Standarts
 
