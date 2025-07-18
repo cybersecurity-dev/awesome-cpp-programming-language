@@ -24,6 +24,8 @@
 ## Idioms
 ### [RAII](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization) (_Resource acquisition is initialization_)
 ### [PIMPL](https://en.cppreference.com/w/cpp/language/pimpl.html) (_Pointer to Implementation_)
+### [CRTP](https://en.wikipedia.org/wiki/Curiously_recurring_template_pattern) (_Curiously recurring template pattern_)
+
 
 
 ## Standarts
