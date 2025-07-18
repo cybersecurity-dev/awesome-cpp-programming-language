@@ -38,6 +38,8 @@
 ### RPC (_Remote Procedure Call_)
 - [gRPC](https://github.com/grpc/grpc) - A high performance, open source universal [RPC framework](https://grpc.io/docs/languages/cpp/quickstart/).
 
+## Performance Analysis and Debugging Tool
+- [Orbit](https://github.com/google/orbit) - Orbit is a standalone profiler and debugging tool for Windows and Linux. Its main purpose is to help developers understand and visualize the execution flow of a complex application.
 
 ## Package Managers
 - [vcpkg](https://github.com/microsoft/vcpkg) - [vcpkg](https://vcpkg.io/) is a free C/C++ package manager for acquiring and managing libraries.
