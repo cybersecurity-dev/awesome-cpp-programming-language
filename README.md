@@ -65,13 +65,13 @@
 - [{fmt}](https://github.com/fmtlib/fmt) - A modern formatting [library](https://fmt.dev/).
 ## Standarts
 
-### [C++17](https://en.wikipedia.org/wiki/C%2B%2B17)
+### [C++17](https://en.wikipedia.org/wiki/C%2B%2B17) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/playlist?list=PL9V4Zu3RroiUQgR_mRQUqaaqMr0dqOMx9&si=eeZgwJukCid0gg_I)
 
-### [C++20](https://en.wikipedia.org/wiki/C%2B%2B20)
+### [C++20](https://en.wikipedia.org/wiki/C%2B%2B20) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/playlist?list=PL9V4Zu3RroiVw5A7UAF80nrGjqa4YHH5V&si=Qs-HYOl3nWr1aW_S)
 
-### [C++23](https://en.wikipedia.org/wiki/C%2B%2B23)
+### [C++23](https://en.wikipedia.org/wiki/C%2B%2B23) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/playlist?list=PL9V4Zu3RroiUDgZNWp3jEfVCekz3zyqlR&si=9ydOxTrqNAMecWHX)
 
-### [C++26](https://en.wikipedia.org/wiki/C%2B%2B26)
+### [C++26](https://en.wikipedia.org/wiki/C%2B%2B26) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/playlist?list=PL9V4Zu3RroiUMnYOdxU8Qyl58Y8d65csM&si=UT8y6spBSphgR1le)
 
 ### My Other Awesome Lists
 You can access the my other awesome lists [here](https://cyberthreatdefence.com/my_awesome_lists)
