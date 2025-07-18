@@ -13,10 +13,18 @@
 ## Libraries
 ### Testing and Mocking Framework
 - [Catch2](https://github.com/catchorg/Catch2) - A modern, C++ native, test framework for unit-tests, TDD and BDD - using C++14, C++17 and later.
-- [Google Test](https://github.com/google/googletest) - Google Testing and Mocking Framework
+- [Google Test](https://github.com/google/googletest) - [Google](https://google.github.io/googletest/) Testing and Mocking Framework
 
 
+## Standarts
 
+### C++17
+
+### C++20
+
+### C++23
+
+### C++26
 
 ### My Other Awesome Lists
 You can access the my other awesome lists [here](https://cyberthreatdefence.com/my_awesome_lists)
