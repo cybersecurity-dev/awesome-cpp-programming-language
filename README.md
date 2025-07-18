@@ -34,9 +34,10 @@
 ### [Copy on Write](https://en.wikipedia.org/wiki/Copy-on-write)
 
 ## Containers
-### Vector
-### Deque
-### Array
+### [Vector](https://en.cppreference.com/w/cpp/container/vector.html)
+### [Deque](https://en.cppreference.com/w/cpp/container/deque.html)
+### [Array](https://en.cppreference.com/w/cpp/container/array.html)
+### [Inplace Vector](https://en.cppreference.com/w/cpp/container/inplace_vector.html)
 
 ## Language Concepts
 ### auto (_Automatic Type Deduction_)
