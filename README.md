@@ -36,7 +36,7 @@
 ## Language Concepts
 ### auto (_Automatic Type Deduction_)
 ### ADL (_Argument Dependent Lookup_)
-### Name Mangling
+### [Name Mangling](https://en.wikipedia.org/wiki/Name_mangling)
 ### [RTTI](https://en.wikipedia.org/wiki/Run-time_type_information) (_Run-time type information_) 
 
 ## Framework and Libraries
