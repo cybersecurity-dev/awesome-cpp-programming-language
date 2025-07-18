@@ -38,6 +38,7 @@
 ### [Deque](https://en.cppreference.com/w/cpp/container/deque.html)
 ### [Array](https://en.cppreference.com/w/cpp/container/array.html)
 ### [Inplace Vector](https://en.cppreference.com/w/cpp/container/inplace_vector.html)
+### [List](https://en.cppreference.com/w/cpp/container/list.html)
 ### [Forward List](https://en.cppreference.com/w/cpp/container/forward_list.html)
 
 ## Language Concepts
