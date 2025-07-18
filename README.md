@@ -11,8 +11,11 @@
 </p>
 
 ## Libraries
-### Test Framework
+### Testing and Mocking Framework
 - [Catch2](https://github.com/catchorg/Catch2) - A modern, C++ native, test framework for unit-tests, TDD and BDD - using C++14, C++17 and later.
+- [Google Test](https://github.com/google/googletest) - Google Testing and Mocking Framework
+
+
 
 
 ### My Other Awesome Lists
