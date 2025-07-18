@@ -40,6 +40,8 @@
 ### [RTTI](https://en.wikipedia.org/wiki/Run-time_type_information) (_Run-time type information_) 
 ### [Virtual Methods](https://en.wikipedia.org/wiki/Virtual_function)
 ### [Virtual Tables](https://en.wikipedia.org/wiki/Virtual_method_table)
+### [Forward Declaration](https://en.wikipedia.org/wiki/Forward_declaration)
+### [The rule of Three/Five/Zero](https://en.cppreference.com/w/cpp/language/rule_of_three.html) 
 
 
 ## Framework and Libraries
