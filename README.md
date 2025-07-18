@@ -48,7 +48,8 @@
 
 ## Severals
 - [JSON for Modern C++](https://github.com/nlohmann/json) - [JSON](https://json.nlohmann.me/) for Modern C++.
-- []() - 
+- [spdlog](https://github.com/gabime/spdlog) - Fast C++ logging library.
+
 ## Standarts
 
 ### [C++17](https://en.wikipedia.org/wiki/C%2B%2B17)
