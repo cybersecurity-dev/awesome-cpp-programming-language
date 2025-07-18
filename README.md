@@ -33,6 +33,12 @@
 ### [Erase-Remove](https://en.wikipedia.org/wiki/Erase%E2%80%93remove_idiom)
 ### [Copy on Write](https://en.wikipedia.org/wiki/Copy-on-write)
 
+## Language Concepts
+### auto (_Automatic Type Deduction_)
+### ADL (_Argument Dependent Lookup_)
+### Name Mangling
+### [RTTI](https://en.wikipedia.org/wiki/Run-time_type_information) (_Run-time type information_) 
+
 ## Framework and Libraries
 ### Testing and Mocking Framework
 - [Catch2](https://github.com/catchorg/Catch2) - A modern, C++ native, test framework for unit-tests, TDD and BDD - using C++14, C++17 and later.
