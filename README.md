@@ -41,7 +41,8 @@
 
 ## Package Managers
 - [vcpkg](https://github.com/microsoft/vcpkg) - [vcpkg](https://vcpkg.io/) is a free C/C++ package manager for acquiring and managing libraries.
-- 
+- [Conan](https://github.com/conan-io/conan) - The open-source C and C++ package [manager](https://conan.io/).
+
 ## Standarts
 
 ### [C++17](https://en.wikipedia.org/wiki/C%2B%2B17)
