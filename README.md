@@ -38,6 +38,9 @@
 ### ADL (_Argument Dependent Lookup_)
 ### [Name Mangling](https://en.wikipedia.org/wiki/Name_mangling)
 ### [RTTI](https://en.wikipedia.org/wiki/Run-time_type_information) (_Run-time type information_) 
+### [Virtual Methods](https://en.wikipedia.org/wiki/Virtual_function)
+### [Virtual Tables](https://en.wikipedia.org/wiki/Virtual_method_table)
+
 
 ## Framework and Libraries
 ### Testing and Mocking Framework
