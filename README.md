@@ -16,6 +16,12 @@
 #### [shared_ptr](https://en.cppreference.com/w/cpp/memory/shared_ptr.html)
 #### [weak_ptr](https://en.cppreference.com/w/cpp/memory/weak_ptr.html)
 
+## Type Casting
+### [static_cast](https://en.cppreference.com/w/cpp/language/static_cast.html)
+### [const_cast](https://en.cppreference.com/w/cpp/language/const_cast.html)
+### [dynamic_cast](https://en.cppreference.com/w/cpp/language/dynamic_cast.html)
+### [reinterpret_cast](https://en.cppreference.com/w/cpp/language/reinterpret_cast.html)
+
 ## Multithreading
 ## Template
 ## Exception Handling
