@@ -15,6 +15,8 @@
 - [Catch2](https://github.com/catchorg/Catch2) - A modern, C++ native, test framework for unit-tests, TDD and BDD - using C++14, C++17 and later.
 - [Google Test](https://github.com/google/googletest) - [Google](https://google.github.io/googletest/) Testing and Mocking Framework
 
+### Network
+- [POCO](https://github.com/pocoproject/poco) - The [POCO C++](https://pocoproject.org/) Libraries are powerful cross-platform open-source C++ libraries for building network- and internet-based applications that run on desktop, server, mobile, IoT, and embedded systems.
 
 ## Standarts
 
