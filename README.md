@@ -26,7 +26,7 @@
 ### [PIMPL](https://en.cppreference.com/w/cpp/language/pimpl.html) (_Pointer to Implementation_)
 ### [CRTP](https://en.wikipedia.org/wiki/Curiously_recurring_template_pattern) (_Curiously recurring template pattern_)
 ### [Erase-Remove](https://en.wikipedia.org/wiki/Erase%E2%80%93remove_idiom)
-
+### [Copy on Write](https://en.wikipedia.org/wiki/Copy-on-write)
 
 
 ## Standarts
