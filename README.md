@@ -33,6 +33,11 @@
 ### [Erase-Remove](https://en.wikipedia.org/wiki/Erase%E2%80%93remove_idiom)
 ### [Copy on Write](https://en.wikipedia.org/wiki/Copy-on-write)
 
+## Containers
+### Vector
+### Deque
+### Array
+
 ## Language Concepts
 ### auto (_Automatic Type Deduction_)
 ### ADL (_Argument Dependent Lookup_)
@@ -72,11 +77,21 @@
 
 ### [C++17](https://en.wikipedia.org/wiki/C%2B%2B17) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/playlist?list=PL9V4Zu3RroiUQgR_mRQUqaaqMr0dqOMx9&si=eeZgwJukCid0gg_I)
 
+#### [Variant](https://en.cppreference.com/w/cpp/utility/variant.html)
+
+#### [Any](https://en.cppreference.com/w/cpp/utility/any.html)
+
 ### [C++20](https://en.wikipedia.org/wiki/C%2B%2B20) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/playlist?list=PL9V4Zu3RroiVw5A7UAF80nrGjqa4YHH5V&si=Qs-HYOl3nWr1aW_S)
+
+#### [Modules](https://en.cppreference.com/w/cpp/language/modules.html)
 
 ### [C++23](https://en.wikipedia.org/wiki/C%2B%2B23) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/playlist?list=PL9V4Zu3RroiUDgZNWp3jEfVCekz3zyqlR&si=9ydOxTrqNAMecWHX)
 
+#### [mdspan](https://en.cppreference.com/w/cpp/container/mdspan.html)
+
 ### [C++26](https://en.wikipedia.org/wiki/C%2B%2B26) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/playlist?list=PL9V4Zu3RroiUMnYOdxU8Qyl58Y8d65csM&si=UT8y6spBSphgR1le)
+
+#### [Contracts](https://en.cppreference.com/w/cpp/language/contracts.html)
 
 ### My Other Awesome Lists
 You can access the my other awesome lists [here](https://cyberthreatdefence.com/my_awesome_lists)
