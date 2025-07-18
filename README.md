@@ -42,7 +42,7 @@
 ### [Virtual Tables](https://en.wikipedia.org/wiki/Virtual_method_table)
 ### [Forward Declaration](https://en.wikipedia.org/wiki/Forward_declaration)
 ### [The rule of Three/Five/Zero](https://en.cppreference.com/w/cpp/language/rule_of_three.html) 
-
+### [SFINAE](https://en.wikipedia.org/wiki/Substitution_failure_is_not_an_error) (_Substitution failure is not an error_)
 
 ## Framework and Libraries
 ### Testing and Mocking Framework
