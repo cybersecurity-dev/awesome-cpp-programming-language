@@ -25,18 +25,19 @@
 ### [RAII](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization) (_Resource acquisition is initialization_)
 ### [PIMPL](https://en.cppreference.com/w/cpp/language/pimpl.html) (_Pointer to Implementation_)
 ### [CRTP](https://en.wikipedia.org/wiki/Curiously_recurring_template_pattern) (_Curiously recurring template pattern_)
+### [Erase-Remove](https://en.wikipedia.org/wiki/Erase%E2%80%93remove_idiom)
 
 
 
 ## Standarts
 
-### C++17
+### [C++17](https://en.wikipedia.org/wiki/C%2B%2B17)
 
-### C++20
+### [C++20](https://en.wikipedia.org/wiki/C%2B%2B20)
 
-### C++23
+### [C++23](https://en.wikipedia.org/wiki/C%2B%2B23)
 
-### C++26
+### [C++26](https://en.wikipedia.org/wiki/C%2B%2B26)
 
 ### My Other Awesome Lists
 You can access the my other awesome lists [here](https://cyberthreatdefence.com/my_awesome_lists)
