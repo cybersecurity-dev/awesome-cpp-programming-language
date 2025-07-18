@@ -16,9 +16,9 @@
 #### [shared_ptr](https://en.cppreference.com/w/cpp/memory/shared_ptr.html)
 #### [weak_ptr](https://en.cppreference.com/w/cpp/memory/weak_ptr.html)
 
-
-
-
+## Multithreading
+## Template
+## Exception Handling
 
 ## Idioms
 ### [RAII](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization) (_Resource acquisition is initialization_)
@@ -38,6 +38,10 @@
 ### RPC (_Remote Procedure Call_)
 - [gRPC](https://github.com/grpc/grpc) - A high performance, open source universal [RPC framework](https://grpc.io/docs/languages/cpp/quickstart/).
 
+
+## Package Managers
+- [vcpkg](https://github.com/microsoft/vcpkg) - [vcpkg](https://vcpkg.io/) is a free C/C++ package manager for acquiring and managing libraries.
+- 
 ## Standarts
 
 ### [C++17](https://en.wikipedia.org/wiki/C%2B%2B17)
