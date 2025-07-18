@@ -19,7 +19,7 @@
 - [POCO](https://github.com/pocoproject/poco) - The [POCO C++](https://pocoproject.org/) Libraries are powerful cross-platform open-source C++ libraries for building network- and internet-based applications that run on desktop, server, mobile, IoT, and embedded systems.
 
 ### RPC (_Remote Procedure Call_)
-- [gRPC](https://github.com/grpc/grpc) - A high performance, open source universal RPC framework
+- [gRPC](https://github.com/grpc/grpc) - A high performance, open source universal [RPC framework](https://grpc.io/docs/languages/cpp/quickstart/).
 
 ## Standarts
 
