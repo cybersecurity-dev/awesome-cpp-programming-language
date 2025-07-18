@@ -22,7 +22,8 @@
 - [gRPC](https://github.com/grpc/grpc) - A high performance, open source universal [RPC framework](https://grpc.io/docs/languages/cpp/quickstart/).
 
 ## Idioms
-### [RAII](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization) (Resource acquisition is initialization)
+### [RAII](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization) (_Resource acquisition is initialization_)
+### [PIMPL](https://en.cppreference.com/w/cpp/language/pimpl.html) (_Pointer to Implementation_)
 
 
 ## Standarts
