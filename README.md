@@ -81,14 +81,16 @@
 ### [C++17](https://en.wikipedia.org/wiki/C%2B%2B17) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/playlist?list=PL9V4Zu3RroiUQgR_mRQUqaaqMr0dqOMx9&si=eeZgwJukCid0gg_I)
 
 #### [std::variant](https://en.cppreference.com/w/cpp/utility/variant.html)
-
+#### [std::basic_string_view](https://en.cppreference.com/w/cpp/string/basic_string_view.html)
 #### [std::any](https://en.cppreference.com/w/cpp/utility/any.html)
 
 ### [C++20](https://en.wikipedia.org/wiki/C%2B%2B20) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/playlist?list=PL9V4Zu3RroiVw5A7UAF80nrGjqa4YHH5V&si=Qs-HYOl3nWr1aW_S)
 
 #### [Modules](https://en.cppreference.com/w/cpp/language/modules.html)
 #### [std::atomic_ref](https://en.cppreference.com/w/cpp/atomic/atomic_ref.html)
+#### [std::barrier](https://en.cppreference.com/w/cpp/thread/barrier.html)
 #### [std::jthread](https://en.cppreference.com/w/cpp/thread/jthread.html)
+#### [std::latch](https://en.cppreference.com/w/cpp/thread/latch.html)
 
 ### [C++23](https://en.wikipedia.org/wiki/C%2B%2B23) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/playlist?list=PL9V4Zu3RroiUDgZNWp3jEfVCekz3zyqlR&si=9ydOxTrqNAMecWHX)
 
