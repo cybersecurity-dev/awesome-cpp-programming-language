@@ -10,6 +10,23 @@
     <img src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/bar.gif">
 </p>
 
+## Pointers and References
+### [Smart Pointers](https://en.wikipedia.org/wiki/Smart_pointer)
+#### [unique_ptr](https://en.cppreference.com/w/cpp/memory/unique_ptr.html)
+#### [shared_ptr](https://en.cppreference.com/w/cpp/memory/shared_ptr.html)
+#### [weak_ptr](https://en.cppreference.com/w/cpp/memory/weak_ptr.html)
+
+
+
+
+
+## Idioms
+### [RAII](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization) (_Resource acquisition is initialization_)
+### [PIMPL](https://en.cppreference.com/w/cpp/language/pimpl.html) (_Pointer to Implementation_)
+### [CRTP](https://en.wikipedia.org/wiki/Curiously_recurring_template_pattern) (_Curiously recurring template pattern_)
+### [Erase-Remove](https://en.wikipedia.org/wiki/Erase%E2%80%93remove_idiom)
+### [Copy on Write](https://en.wikipedia.org/wiki/Copy-on-write)
+
 ## Framework and Libraries
 ### Testing and Mocking Framework
 - [Catch2](https://github.com/catchorg/Catch2) - A modern, C++ native, test framework for unit-tests, TDD and BDD - using C++14, C++17 and later.
@@ -20,14 +37,6 @@
 
 ### RPC (_Remote Procedure Call_)
 - [gRPC](https://github.com/grpc/grpc) - A high performance, open source universal [RPC framework](https://grpc.io/docs/languages/cpp/quickstart/).
-
-## Idioms
-### [RAII](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization) (_Resource acquisition is initialization_)
-### [PIMPL](https://en.cppreference.com/w/cpp/language/pimpl.html) (_Pointer to Implementation_)
-### [CRTP](https://en.wikipedia.org/wiki/Curiously_recurring_template_pattern) (_Curiously recurring template pattern_)
-### [Erase-Remove](https://en.wikipedia.org/wiki/Erase%E2%80%93remove_idiom)
-### [Copy on Write](https://en.wikipedia.org/wiki/Copy-on-write)
-
 
 ## Standarts
 
