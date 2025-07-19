@@ -43,7 +43,10 @@
 ### [reinterpret_cast](https://en.cppreference.com/w/cpp/language/reinterpret_cast.html)
 
 ## Multithreading
-## Template
+## Template Metaprogramming
+* [Variadic template](https://en.wikipedia.org/wiki/Variadic_template)
+* [Expression templates](https://en.wikipedia.org/wiki/Expression_templates)
+
 ## Exception Handling
 
 ## Idioms
