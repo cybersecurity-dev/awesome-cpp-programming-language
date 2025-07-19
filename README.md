@@ -46,6 +46,7 @@
 ## [Template Metaprogramming](https://en.wikipedia.org/wiki/Template_metaprogramming)
 * [Variadic Template](https://en.wikipedia.org/wiki/Variadic_template)
 * [Expression Templates](https://en.wikipedia.org/wiki/Expression_templates)
+* [Compile-Time Function Execution](https://en.wikipedia.org/wiki/Compile-time_function_execution)
 
 ## Exception Handling
 
