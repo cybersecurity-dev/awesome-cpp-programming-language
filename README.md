@@ -96,10 +96,13 @@
 - [Conan](https://github.com/conan-io/conan) - The open-source C and C++ package [manager](https://conan.io/).
 
 ## Severals
-- [JSON for Modern C++](https://github.com/nlohmann/json) - [JSON](https://json.nlohmann.me/) for Modern C++.
-- [spdlog](https://github.com/gabime/spdlog) - Fast C++ logging library.
-- [pybind11](https://github.com/pybind/pybind11) - Seamless [operability](https://pybind11.readthedocs.io/en/stable/) between C++11 and Python.
+- [Doxygen](https://doxygen.nl/) -  Doxygen is a widely-used documentation generator tool in software development.
 - [{fmt}](https://github.com/fmtlib/fmt) - A modern formatting [library](https://fmt.dev/).
+- [JSON for Modern C++](https://github.com/nlohmann/json) - [JSON](https://json.nlohmann.me/) for Modern C++.
+- [pybind11](https://github.com/pybind/pybind11) - Seamless [operability](https://pybind11.readthedocs.io/en/stable/) between C++11 and Python.
+- [spdlog](https://github.com/gabime/spdlog) - Fast C++ logging library.
+
+
 ## Standarts
 
 ### [C++17](https://en.wikipedia.org/wiki/C%2B%2B17) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/playlist?list=PL9V4Zu3RroiUQgR_mRQUqaaqMr0dqOMx9&si=eeZgwJukCid0gg_I)
