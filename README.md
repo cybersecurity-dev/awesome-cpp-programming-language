@@ -2,7 +2,7 @@
   <img width="15%" src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/Cpp_logo.svg" />
 </p>
 
-# Awesome C++ Programming Language [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) 
+# Awesome [C++](https://en.wikipedia.org/wiki/C%2B%2B) Programming [Language](https://en.wikipedia.org/wiki/Category:C%2B%2B_libraries) [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) 
 [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://youtube.com/playlist?list=PL9V4Zu3RroiUR_6ABLxUUaY-Gcz9tzRm_&si=ASTMXOYiVZ_qV4Ck) [![Reddit](https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white)](https://www.reddit.com/r/cpp/)
 
 <p align="center">
