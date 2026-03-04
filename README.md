@@ -22,6 +22,7 @@
 
 ## 📖 Contents
 - [Containers](#containers)
+    - [Vector](#vector)
 - [Pointers and References](#pointers-and-references)
 - [Functions](#functions)
 - [Type Casting](#type-casting)
