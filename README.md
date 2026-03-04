@@ -39,6 +39,19 @@
 
 ## Containers
 ### [Vector](https://cppreference.com/w/cpp/container/vector.html)
+Except for the `std::vector<bool>` partial specialization, the elements are stored contiguously, which means that elements can be accessed not only through iterators, but also using offsets to regular pointers to elements. 
+
+```cpp
+std::vector<int> ivec = { 1, 2, 3, 4, 5 };
+//lambda - expression
+auto print = [](const int& n) { std::cout << n << ' '; };
+    
+std::for_each(ivec.cbegin(), ivec.cend(), print);
+std::cout << std::endl;
+std::for_each(ivec.crbegin(), ivec.crend(), print);
+```
+
+
 ### [Deque](https://cppreference.com/w/cpp/container/deque.html)
 ### [Array](https://cppreference.com/w/cpp/container/array.html)
 ### [Inplace Vector](https://cppreference.com/w/cpp/container/inplace_vector.html)
