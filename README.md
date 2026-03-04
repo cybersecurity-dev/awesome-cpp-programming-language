@@ -37,50 +37,50 @@
 
 
 ## Pointers and References
-### [Smart Pointers](https://en.wikipedia.org/wiki/Smart_pointer)
-#### [unique_ptr](https://en.cppreference.com/w/cpp/memory/unique_ptr.html)
-#### [shared_ptr](https://en.cppreference.com/w/cpp/memory/shared_ptr.html)
-#### [weak_ptr](https://en.cppreference.com/w/cpp/memory/weak_ptr.html)
+### [Smart Pointers](https://wikipedia.org/wiki/Smart_pointer)
+#### [unique_ptr](https://cppreference.com/w/cpp/memory/unique_ptr.html)
+#### [shared_ptr](https://cppreference.com/w/cpp/memory/shared_ptr.html)
+#### [weak_ptr](https://cppreference.com/w/cpp/memory/weak_ptr.html)
 
 ## Type Casting
-### [static_cast](https://en.cppreference.com/w/cpp/language/static_cast.html)
-### [const_cast](https://en.cppreference.com/w/cpp/language/const_cast.html)
-### [dynamic_cast](https://en.cppreference.com/w/cpp/language/dynamic_cast.html)
-### [reinterpret_cast](https://en.cppreference.com/w/cpp/language/reinterpret_cast.html)
+### [static_cast](https://cppreference.com/w/cpp/language/static_cast.html)
+### [const_cast](https://cppreference.com/w/cpp/language/const_cast.html)
+### [dynamic_cast](https://cppreference.com/w/cpp/language/dynamic_cast.html)
+### [reinterpret_cast](https://cppreference.com/w/cpp/language/reinterpret_cast.html)
 
 ## Multithreading
-## [Template Metaprogramming](https://en.wikipedia.org/wiki/Template_metaprogramming)
-* [Variadic Template](https://en.wikipedia.org/wiki/Variadic_template)
-* [Expression Templates](https://en.wikipedia.org/wiki/Expression_templates)
-* [Compile-Time Function Execution](https://en.wikipedia.org/wiki/Compile-time_function_execution)
+## [Template Metaprogramming](https://wikipedia.org/wiki/Template_metaprogramming)
+* [Variadic Template](https://wikipedia.org/wiki/Variadic_template)
+* [Expression Templates](https://wikipedia.org/wiki/Expression_templates)
+* [Compile-Time Function Execution](https://wikipedia.org/wiki/Compile-time_function_execution)
 
 ## Exception Handling
 
 ## Idioms
-### [RAII](https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization) (_Resource acquisition is initialization_)
-### [PIMPL](https://en.cppreference.com/w/cpp/language/pimpl.html) (_Pointer to Implementation_)
-### [CRTP](https://en.wikipedia.org/wiki/Curiously_recurring_template_pattern) (_Curiously recurring template pattern_)
-### [Erase-Remove](https://en.wikipedia.org/wiki/Erase%E2%80%93remove_idiom)
-### [Copy on Write](https://en.wikipedia.org/wiki/Copy-on-write)
+### [RAII](https://wikipedia.org/wiki/Resource_acquisition_is_initialization) (_Resource acquisition is initialization_)
+### [PIMPL](https://cppreference.com/w/cpp/language/pimpl.html) (_Pointer to Implementation_)
+### [CRTP](https://wikipedia.org/wiki/Curiously_recurring_template_pattern) (_Curiously recurring template pattern_)
+### [Erase-Remove](https://wikipedia.org/wiki/Erase%E2%80%93remove_idiom)
+### [Copy on Write](https://wikipedia.org/wiki/Copy-on-write)
 
 ## Containers
-### [Vector](https://en.cppreference.com/w/cpp/container/vector.html)
-### [Deque](https://en.cppreference.com/w/cpp/container/deque.html)
-### [Array](https://en.cppreference.com/w/cpp/container/array.html)
-### [Inplace Vector](https://en.cppreference.com/w/cpp/container/inplace_vector.html)
-### [List](https://en.cppreference.com/w/cpp/container/list.html)
-### [Forward List](https://en.cppreference.com/w/cpp/container/forward_list.html)
+### [Vector](https://cppreference.com/w/cpp/container/vector.html)
+### [Deque](https://cppreference.com/w/cpp/container/deque.html)
+### [Array](https://cppreference.com/w/cpp/container/array.html)
+### [Inplace Vector](https://cppreference.com/w/cpp/container/inplace_vector.html)
+### [List](https://cppreference.com/w/cpp/container/list.html)
+### [Forward List](https://cppreference.com/w/cpp/container/forward_list.html)
 
 ## Language Concepts
 ### auto (_Automatic Type Deduction_)
 ### ADL (_Argument Dependent Lookup_)
-### [Name Mangling](https://en.wikipedia.org/wiki/Name_mangling)
-### [RTTI](https://en.wikipedia.org/wiki/Run-time_type_information) (_Run-time type information_) 
-### [Virtual Methods](https://en.wikipedia.org/wiki/Virtual_function)
-### [Virtual Tables](https://en.wikipedia.org/wiki/Virtual_method_table)
-### [Forward Declaration](https://en.wikipedia.org/wiki/Forward_declaration)
-### [The rule of Three/Five/Zero](https://en.cppreference.com/w/cpp/language/rule_of_three.html) 
-### [SFINAE](https://en.wikipedia.org/wiki/Substitution_failure_is_not_an_error) (_Substitution failure is not an error_)
+### [Name Mangling](https://wikipedia.org/wiki/Name_mangling)
+### [RTTI](https://wikipedia.org/wiki/Run-time_type_information) (_Run-time type information_) 
+### [Virtual Methods](https://wikipedia.org/wiki/Virtual_function)
+### [Virtual Tables](https://wikipedia.org/wiki/Virtual_method_table)
+### [Forward Declaration](https://wikipedia.org/wiki/Forward_declaration)
+### [The rule of Three/Five/Zero](https://cppreference.com/w/cpp/language/rule_of_three.html) 
+### [SFINAE](https://wikipedia.org/wiki/Substitution_failure_is_not_an_error) (_Substitution failure is not an error_)
 
 ## Framework and Libraries
 ### Testing and Mocking Framework
@@ -111,28 +111,28 @@
 
 ## Standarts
 
-### [C++17](https://en.wikipedia.org/wiki/C%2B%2B17) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/playlist?list=PL9V4Zu3RroiUQgR_mRQUqaaqMr0dqOMx9&si=eeZgwJukCid0gg_I)
+### [C++17](https://wikipedia.org/wiki/C%2B%2B17) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/playlist?list=PL9V4Zu3RroiUQgR_mRQUqaaqMr0dqOMx9&si=eeZgwJukCid0gg_I)
 
-#### [std::variant](https://en.cppreference.com/w/cpp/utility/variant.html)
-#### [std::basic_string_view](https://en.cppreference.com/w/cpp/string/basic_string_view.html)
-#### [std::any](https://en.cppreference.com/w/cpp/utility/any.html)
+#### [std::variant](https://cppreference.com/w/cpp/utility/variant.html)
+#### [std::basic_string_view](https://cppreference.com/w/cpp/string/basic_string_view.html)
+#### [std::any](https://cppreference.com/w/cpp/utility/any.html)
 
-### [C++20](https://en.wikipedia.org/wiki/C%2B%2B20) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/playlist?list=PL9V4Zu3RroiVw5A7UAF80nrGjqa4YHH5V&si=Qs-HYOl3nWr1aW_S)
+### [C++20](https://wikipedia.org/wiki/C%2B%2B20) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/playlist?list=PL9V4Zu3RroiVw5A7UAF80nrGjqa4YHH5V&si=Qs-HYOl3nWr1aW_S)
 
-#### [Modules](https://en.cppreference.com/w/cpp/language/modules.html)
-#### [std::atomic_ref](https://en.cppreference.com/w/cpp/atomic/atomic_ref.html)
-#### [std::barrier](https://en.cppreference.com/w/cpp/thread/barrier.html)
-#### [std::jthread](https://en.cppreference.com/w/cpp/thread/jthread.html)
-#### [std::latch](https://en.cppreference.com/w/cpp/thread/latch.html)
+#### [Modules](https://cppreference.com/w/cpp/language/modules.html)
+#### [std::atomic_ref](https://cppreference.com/w/cpp/atomic/atomic_ref.html)
+#### [std::barrier](https://cppreference.com/w/cpp/thread/barrier.html)
+#### [std::jthread](https://cppreference.com/w/cpp/thread/jthread.html)
+#### [std::latch](https://cppreference.com/w/cpp/thread/latch.html)
 
-### [C++23](https://en.wikipedia.org/wiki/C%2B%2B23) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/playlist?list=PL9V4Zu3RroiUDgZNWp3jEfVCekz3zyqlR&si=9ydOxTrqNAMecWHX)
+### [C++23](https://wikipedia.org/wiki/C%2B%2B23) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/playlist?list=PL9V4Zu3RroiUDgZNWp3jEfVCekz3zyqlR&si=9ydOxTrqNAMecWHX)
 
-#### [std::generator](https://en.cppreference.com/w/cpp/coroutine/generator.html)
-#### [std::mdspan](https://en.cppreference.com/w/cpp/container/mdspan.html)
+#### [std::generator](https://cppreference.com/w/cpp/coroutine/generator.html)
+#### [std::mdspan](https://cppreference.com/w/cpp/container/mdspan.html)
 
-### [C++26](https://en.wikipedia.org/wiki/C%2B%2B26) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/playlist?list=PL9V4Zu3RroiUMnYOdxU8Qyl58Y8d65csM&si=UT8y6spBSphgR1le)
+### [C++26](https://wikipedia.org/wiki/C%2B%2B26) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/playlist?list=PL9V4Zu3RroiUMnYOdxU8Qyl58Y8d65csM&si=UT8y6spBSphgR1le)
 
-#### [Contracts](https://en.cppreference.com/w/cpp/language/contracts.html)
+#### [Contracts](https://cppreference.com/w/cpp/language/contracts.html)
 
 ## Compiler/Debugger
 - [MSVC & GCC & Clang](https://github.com/cybersecurity-dev/PowerShell-Toolkit/#install-c-cpp) - installation step of MSVC/GCC/Clang compiler in **Windows**
@@ -150,4 +150,4 @@ You can access the my other awesome lists [here](https://cyberthreatdefence.com/
 ### Contributors
 [Thanks goes to these contributors](https://github.com/cybersecurity-dev/awesome-cpp-programming-language/graphs/contributors)!
 
-[🔼 Back to top](#awesome-cpp-programming-language-)
+[🔼 Back to top](#awesome-c-programming-language-)
