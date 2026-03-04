@@ -23,6 +23,8 @@
 ## 📖 Contents
 - [Containers](#containers)
     - [Vector](#vector)
+    - [List](#list)
+    - [Deque](#deque)
 - [Pointers and References](#pointers-and-references)
 - [Functions](#functions)
 - [Type Casting](#type-casting)
@@ -39,6 +41,7 @@
 
 
 ## Containers
+
 ### [Vector](https://cppreference.com/w/cpp/container/vector.html)
 Except for the `std::vector<bool>` partial specialization, the elements are stored contiguously, which means that elements can be accessed not only through iterators, but also using offsets to regular pointers to elements. 
 
@@ -52,12 +55,19 @@ std::cout << std::endl;
 std::for_each(ivec.crbegin(), ivec.crend(), print);
 ```
 
+### [List](https://cppreference.com/w/cpp/container/list.html)
+
 
 ### [Deque](https://cppreference.com/w/cpp/container/deque.html)
+
+
 ### [Array](https://cppreference.com/w/cpp/container/array.html)
-### [Inplace Vector](https://cppreference.com/w/cpp/container/inplace_vector.html)
-### [List](https://cppreference.com/w/cpp/container/list.html)
+
+
 ### [Forward List](https://cppreference.com/w/cpp/container/forward_list.html)
+
+### [Inplace Vector](https://cppreference.com/w/cpp/container/inplace_vector.html)
+
 
 ## Pointers and References
 ### [Smart Pointers](https://wikipedia.org/wiki/Smart_pointer)
