@@ -21,10 +21,11 @@
 </p>
 
 ## 📖 Contents
+- [Containers](#containers)
 - [Pointers and References](#pointers-and-references)
+- [Functions](#functions)
 - [Type Casting](#type-casting)
 - [Idioms](#idioms)
-- [Containers](#containers)
 - [Language Concepts](#language-concepts)
 - [Framework and Libraries](#framework-and-libraries)
 - [Performance Analysis and Debugging Tool](#performance-analysis-and-debugging-tool)
@@ -36,11 +37,23 @@
 - [Contributors](#contributors)
 
 
+## Containers
+### [Vector](https://cppreference.com/w/cpp/container/vector.html)
+### [Deque](https://cppreference.com/w/cpp/container/deque.html)
+### [Array](https://cppreference.com/w/cpp/container/array.html)
+### [Inplace Vector](https://cppreference.com/w/cpp/container/inplace_vector.html)
+### [List](https://cppreference.com/w/cpp/container/list.html)
+### [Forward List](https://cppreference.com/w/cpp/container/forward_list.html)
+
 ## Pointers and References
 ### [Smart Pointers](https://wikipedia.org/wiki/Smart_pointer)
 #### [unique_ptr](https://cppreference.com/w/cpp/memory/unique_ptr.html)
 #### [shared_ptr](https://cppreference.com/w/cpp/memory/shared_ptr.html)
 #### [weak_ptr](https://cppreference.com/w/cpp/memory/weak_ptr.html)
+
+## Functions
+### [Lambda Expressions](https://cppreference.com/w/cpp/language/lambda.html)
+### [Coroutines](https://cppreference.com/w/cpp/language/coroutines.html)
 
 ## Type Casting
 ### [static_cast](https://cppreference.com/w/cpp/language/static_cast.html)
@@ -63,13 +76,6 @@
 ### [Erase-Remove](https://wikipedia.org/wiki/Erase%E2%80%93remove_idiom)
 ### [Copy on Write](https://wikipedia.org/wiki/Copy-on-write)
 
-## Containers
-### [Vector](https://cppreference.com/w/cpp/container/vector.html)
-### [Deque](https://cppreference.com/w/cpp/container/deque.html)
-### [Array](https://cppreference.com/w/cpp/container/array.html)
-### [Inplace Vector](https://cppreference.com/w/cpp/container/inplace_vector.html)
-### [List](https://cppreference.com/w/cpp/container/list.html)
-### [Forward List](https://cppreference.com/w/cpp/container/forward_list.html)
 
 ## Language Concepts
 ### auto (_Automatic Type Deduction_)
