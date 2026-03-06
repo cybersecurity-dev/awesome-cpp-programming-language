@@ -88,7 +88,9 @@ for (auto it = ilist.cbegin(); it != ilist.cend(); ++it) {
 
 
 ## Pointers and References
+
 ### [Smart Pointers](https://wikipedia.org/wiki/Smart_pointer)
+Smart pointers enable automatic, exception-safe, object lifetime management.
 
 #### [unique_ptr](https://cppreference.com/w/cpp/memory/unique_ptr.html)
 `std::unique_ptr` is a smart pointer that owns (**is responsible for**) and manages another object via a pointer and subsequently disposes of that object when the unique_ptr goes out of scope.
