@@ -27,6 +27,9 @@
     - [Deque](#deque)
 - [Pointers and References](#pointers-and-references)
     - [std::unique_ptr](#unique_ptr)
+- [Expressions](#expressions)
+    - [Lambda Expressions](#lambda-expressions)
+    - [Value Categories](#value-categories)
 - [Functions](#functions)
 - [Type Casting](#type-casting)
 - [Idioms](#idioms)
@@ -107,8 +110,19 @@ Smart pointers enable automatic, exception-safe, object lifetime management.
 
 #### [weak_ptr](https://cppreference.com/w/cpp/memory/weak_ptr.html)
 
-## Functions
+## [Expressions](https://cppreference.com/w/cpp/language/expressions.html)
+
 ### [Lambda Expressions](https://cppreference.com/w/cpp/language/lambda.html)
+
+### [Value Categories](https://cppreference.com/w/cpp/language/value_category.html)
+
+#### lvalue
+#### rvalue
+#### glvalue
+#### prvalue
+#### xvalue
+
+## Functions
 ### [Coroutines](https://cppreference.com/w/cpp/language/coroutines.html)
 
 ## Type Casting
