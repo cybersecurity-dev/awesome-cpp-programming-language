@@ -26,6 +26,7 @@
     - [List](#list)
     - [Deque](#deque)
 - [Pointers and References](#pointers-and-references)
+    - [std::unique_ptr](#unique_ptr)
 - [Functions](#functions)
 - [Type Casting](#type-casting)
 - [Idioms](#idioms)
@@ -88,8 +89,20 @@ for (auto it = ilist.cbegin(); it != ilist.cend(); ++it) {
 
 ## Pointers and References
 ### [Smart Pointers](https://wikipedia.org/wiki/Smart_pointer)
+
 #### [unique_ptr](https://cppreference.com/w/cpp/memory/unique_ptr.html)
+`std::unique_ptr` is a smart pointer that owns (**is responsible for**) and manages another object via a pointer and subsequently disposes of that object when the unique_ptr goes out of scope.
+
+```cpp
+{
+    unique_ptr<ClassName> uptr(new ClassName);
+    uptr -> method_name();
+    //....using
+} //destructing uptr destroys the ClassName object.
+```
+
 #### [shared_ptr](https://cppreference.com/w/cpp/memory/shared_ptr.html)
+
 #### [weak_ptr](https://cppreference.com/w/cpp/memory/weak_ptr.html)
 
 ## Functions
