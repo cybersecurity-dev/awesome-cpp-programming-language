@@ -114,6 +114,26 @@ Smart pointers enable automatic, exception-safe, object lifetime management.
 
 ### [Lambda Expressions](https://cppreference.com/w/cpp/language/lambda.html)
 
+[**`Lambda expression`**](https://wikipedia.org/wiki/Anonymous_function) in computer programming, also called an anonymous function, is a defined function not bound to an identifier.
+
+```cpp
+auto make_function(int& iparam)
+{
+    return [&] { std::cout << iparam << std::endl; };
+}
+
+int main()
+{
+    int ival = 2;
+    auto f = make_function(ival); // the use of iparam in f binds directly to ival
+    f();
+    
+    ival = 3;
+    f();
+    return 0;
+}
+```
+
 ### [Value Categories](https://cppreference.com/w/cpp/language/value_category.html)
 
 #### lvalue
