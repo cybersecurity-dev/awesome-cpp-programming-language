@@ -21,8 +21,6 @@
     <img src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/bar.gif">
 </p>
 
-C++11, C++14, C++17, C++20, C++23, C++26
-
 
 ## 📖 Contents
 - [Containers](#containers)
