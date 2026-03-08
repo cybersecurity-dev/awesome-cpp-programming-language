@@ -138,9 +138,32 @@ int main()
 
 ### [Value Categories](https://cppreference.com/w/cpp/language/value_category.html)
 
-#### lvalue
+- a `glvalue` ("generalized" lvalue) is an expression whose evaluation determines the identity of an object or function.
+- a `prvalue` ("pure" rvalue) is an expression whose evaluation.
+- an `xvalue` (an "eXpiring" value) is a glvalue that denotes an object whose resources can be reused.
+- an `lvalue` is a glvalue that is not an xvalue.
+
+#### [lvalue](https://wikipedia.org/wiki/Value_(computer_science)#lrvalue)
+
+Some programming languages use the idea of l-values and r-values, deriving from the typical mode of evaluation on the left and right-hand side of an assignment statement. An l-value refers to an object that persists beyond a single expression. An r-value is a temporary value that does not persist beyond the expression that uses it.
+
+```cpp
+void foo();
+int main() {
+    int ivala; // Expression 'ivala' is lvalue
+    int &ivalb{ivala}; // Expression 'ivalb' is lvalue
+
+    // Expression 'foo' is lvalue
+    // address may be taken by built-in address-of operator
+    void (*ptrfoo)() = &foo;
+```
+
 #### rvalue
+
 #### glvalue
+a glvalue (`"generalized"` lvalue) is an expression whose evaluation determines the identity of an object or function.
+
+
 #### prvalue
 #### xvalue
 
