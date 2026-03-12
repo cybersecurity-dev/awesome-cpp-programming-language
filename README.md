@@ -172,8 +172,14 @@ a glvalue (`"generalized"` lvalue) is an expression whose evaluation determines 
 
 ## Type Casting
 ### [static_cast](https://cppreference.com/w/cpp/language/static_cast.html)
-### [const_cast](https://cppreference.com/w/cpp/language/const_cast.html)
+Converts between types using a combination of implicit and user-defined conversions.
+
 ### [dynamic_cast](https://cppreference.com/w/cpp/language/dynamic_cast.html)
+Safely converts pointers and references to classes up, down, and sideways along the inheritance hierarchy.
+
+### [const_cast](https://cppreference.com/w/cpp/language/const_cast.html)
+Converts between types with different cv-qualification.
+
 ### [reinterpret_cast](https://cppreference.com/w/cpp/language/reinterpret_cast.html)
 
 ## Multithreading
