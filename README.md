@@ -204,6 +204,38 @@ Converts between types with different cv-qualification.
 ### [Name Mangling](https://wikipedia.org/wiki/Name_mangling)
 ### [RTTI](https://wikipedia.org/wiki/Run-time_type_information) (_Run-time type information_) 
 ### [Virtual Methods](https://wikipedia.org/wiki/Virtual_function)
+Virtual functions enable `runtime polymorphism` (dynamic dispatch). When you call a virtual function through a base class pointer or reference, C++ decides at runtime which overridden function to execute based on the actual (dynamic) type of the object.
+
+```cpp
+struct Basev1 {
+    void speak() { cout << "Base v1 speaks\n"; }  // NOT virtual
+};
+
+struct Derivedv1 : Basev1 {
+    void speak() { cout << "Derived v1 speaks\n"; } // hides Base::speak
+};
+
+struct Basev2 {
+    virtual void speak() { cout << "Base v2 speaks\n"; }  // virtual
+};
+
+struct Derivedv2 : Basev2 {
+    void speak() override { cout << "Derived v2 speaks\n"; } // override
+};
+
+int main() {
+    Derivedv1 dv1;
+    Basev1* ptrv1 = &dv1;    // base pointer to a derived object
+    ptrv1->speak();      // calls Base::speak (static dispatch)
+    
+    /*-------------------------------*/
+    Derivedv2 dv2;
+    Basev2* ptrv2 = &dv2;
+    ptrv2->speak();      // calls Derived::speak (dynamic dispatch)
+
+    return 0;
+}
+```
 ### [Virtual Tables](https://wikipedia.org/wiki/Virtual_method_table)
 ### [Forward Declaration](https://wikipedia.org/wiki/Forward_declaration)
 ### [The rule of Three/Five/Zero](https://cppreference.com/w/cpp/language/rule_of_three.html) 
