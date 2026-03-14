@@ -241,11 +241,38 @@ int main() {
 }
 ```
 ### [Virtual Tables](https://wikipedia.org/wiki/Virtual_method_table)
+
 ### [Forward Declaration](https://wikipedia.org/wiki/Forward_declaration)
-### [The rule of Three/Five/Zero](https://cppreference.com/w/cpp/language/rule_of_three.html) 
+
+### [Special Member Functions](https://wikipedia.org/wiki/Special_member_functions)
+
+
+### [Rule of N](https://cppreference.com/w/cpp/language/rule_of_three.html)
+
+#### [The Rule of Three](https://wikipedia.org/wiki/Rule_of_three_(C%2B%2B_programming))
+The `Rule of Three in C++ says`: If a class manages a resource (_e.g., raw new-allocated memory, file handle, socket_), and you need to define any one of these:
+* Destructor
+* Copy constructor
+* Copy assignment operator
+
+#### The Rule of Five
+The Rule of Five (C++11 and later) extends the Rule of Three.
+If your class manages a resource (_e.g., heap memory, file descriptors, sockets, mutexes_), and you define any of the special member functions, you typically need to implement all five:
+* Destructor
+* Copy constructor
+* Copy assignment operator
+* Move constructor
+* Move assignment operator
+
+#### The Rule of Zero
+If your class doesn’t manage resources directly (no raw new/delete, no manual file handles, etc.), you don’t need to write any of the special member functions (_destructor, copy/move ctor, copy/move assignment_).
+
 ### [SFINAE](https://wikipedia.org/wiki/Substitution_failure_is_not_an_error) (_Substitution failure is not an error_)
 
+
+
 ## Framework and Libraries
+
 ### Testing and Mocking Framework
 - [Catch2](https://github.com/catchorg/Catch2) - A modern, C++ native, test framework for unit-tests, TDD and BDD - using C++14, C++17 and later.
 - [Google Test](https://github.com/google/googletest) - [Google](https://google.github.io/googletest/) Testing and Mocking Framework
