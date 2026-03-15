@@ -245,6 +245,23 @@ int main() {
 ### [Forward Declaration](https://wikipedia.org/wiki/Forward_declaration)
 
 ### [Special Member Functions](https://wikipedia.org/wiki/Special_member_functions)
+* (Default) Constructor:
+* Copy Constructor:
+* Move Constructor:
+* Copy Assignment Operator:
+* Move assignment Operator:
+* Destructor:
+
+Signatures of the special member functions:
+
+| Function                 | Syntax for class `MyClass`                              |
+|--------------------------|----------------------------------------------------------|
+| (Default) constructor    | `MyClass();`                                             |
+| Copy constructor         | `MyClass(const MyClass& other);`                         |
+| Move constructor         | `MyClass(MyClass&& other) noexcept;`                     |
+| Copy assignment operator | `MyClass& operator=(const MyClass& other);`              |
+| Move assignment operator | `MyClass& operator=(MyClass&& other) noexcept;`          |
+| Destructor               | `virtual ~MyClass();`                                    |
 
 
 ### [Rule of N](https://cppreference.com/w/cpp/language/rule_of_three.html)
