@@ -39,6 +39,11 @@
     - [const_cast](#const_cast)
     - [reinterpret_cast](#reinterpret_cast) 
 - [Idioms](#idioms)
+    - [RAII](#raii-resource-acquisition-is-initialization)
+    - [PIMPL](#pimpl-pointer-to-implementation)
+    - [CRTP](#crtp-curiously-recurring-template-pattern)
+    - [Erase-Remove](#erase-remove)
+    - [Copy on Write](#copy-on-write)
 - [Language Concepts](#language-concepts)
 - [Framework and Libraries](#framework-and-libraries)
 - [Performance Analysis and Debugging Tool](#performance-analysis-and-debugging-tool)
@@ -194,13 +199,16 @@ Converts between types with different cv-qualification.
 
 ## Exception Handling
 
-## Idioms
+## [Idioms](https://wikipedia.org/wiki/Programming_idiom)
+
 ### [RAII](https://wikipedia.org/wiki/Resource_acquisition_is_initialization) (_Resource acquisition is initialization_)
+Resource Acquisition Is Initialization or RAII, is a C++ programming technique which binds the life cycle of a resource that must be acquired before use (_allocated heap memory, thread of execution, open socket, open file, locked mutex, disk space, database connection—anything that exists in limited supply_) to the lifetime of an object. RAII guarantees that the resource is available to any function that may access the object. It also guarantees that all resources are released when the lifetime of their controlling object ends, in reverse order of acquisition.
+
 ### [PIMPL](https://cppreference.com/w/cpp/language/pimpl.html) (_Pointer to Implementation_)
+**`"Pointer to implementation"`** or `"pImpl"` is a C++ programming technique that removes implementation details of a class from its object representation by placing them in a separate class, accessed through an opaque pointer.
 ### [CRTP](https://wikipedia.org/wiki/Curiously_recurring_template_pattern) (_Curiously recurring template pattern_)
 ### [Erase-Remove](https://wikipedia.org/wiki/Erase%E2%80%93remove_idiom)
 ### [Copy on Write](https://wikipedia.org/wiki/Copy-on-write)
-
 
 ## Language Concepts
 ### auto (_Automatic Type Deduction_)
