@@ -340,6 +340,11 @@ constexpr int factorial(int n) {
 ```
 ![constexpr](/.assets/constexpr.png)
 
+```cpp
+constexpr int fac5 = factorial(5);
+static constexpr int const& fac10 = 3628800;
+static_assert(fac10 == factorial(10), "factorial failed\n");
+```
 
 ### Consteval (C++20)
 
