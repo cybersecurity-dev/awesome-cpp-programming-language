@@ -44,6 +44,8 @@
     - [CRTP](#crtp-curiously-recurring-template-pattern)
     - [Erase-Remove](#erase-remove)
     - [Copy on Write](#copy-on-write)
+- [Specifiers](#specifiers)
+    - [Constexpr (C++11)]() 
 - [Language Concepts](#language-concepts)
 - [Framework and Libraries](#framework-and-libraries)
 - [Performance Analysis and Debugging Tool](#performance-analysis-and-debugging-tool)
@@ -310,14 +312,49 @@ LD_LIBRARY_PATH=. ./app.out
 Or install it to a system directory like /usr/local/lib.
 
 ### [CRTP](https://wikipedia.org/wiki/Curiously_recurring_template_pattern) (_Curiously recurring template pattern_)
+
 ### [Erase-Remove](https://wikipedia.org/wiki/Erase%E2%80%93remove_idiom)
+
 ### [Copy on Write](https://wikipedia.org/wiki/Copy-on-write)
 
+
+## Specifiers
+
+### Typedef
+
+### Inline
+
+### Virtual Function Specifier
+
+### Explicit Function Specifier
+
+### Friend 
+
+### Constexpr (C++11)
+
+The **`constexpr`** specifier declares that it is possible to evaluate the value of the entities at `compile time`. 
+```cpp
+constexpr int factorial(int n) {
+    return n <= 1 ? 1 : (n * factorial(n - 1));
+}
+```
+![constexpr](/.assets/constexpr.png)
+
+
+### Consteval (C++20)
+
+### Constinit (C++20)
+
 ## Language Concepts
+
 ### auto (_Automatic Type Deduction_)
+
 ### ADL (_Argument Dependent Lookup_)
+
 ### [Name Mangling](https://wikipedia.org/wiki/Name_mangling)
+
 ### [RTTI](https://wikipedia.org/wiki/Run-time_type_information) (_Run-time type information_) 
+
 ### [Virtual Methods](https://wikipedia.org/wiki/Virtual_function)
 Virtual functions enable `runtime polymorphism` (dynamic dispatch). When you call a virtual function through a base class pointer or reference, C++ decides at runtime which overridden function to execute based on the actual (dynamic) type of the object.
 
