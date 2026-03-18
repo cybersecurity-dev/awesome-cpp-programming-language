@@ -328,7 +328,59 @@ Or install it to a system directory like /usr/local/lib.
 
 ### Explicit Function Specifier
 
-### Friend 
+### [Friend](https://cppreference.com/w/cpp/language/friend.html)
+
+The `friend` declaration appears in a class body and grants a function or another class access to private and protected members of the class where the friend declaration appears.
+
+* Friend Function Example
+    ```cpp
+    class Point2D {
+    private:
+        int x, y;
+    
+    public:
+        Point2D(int x, int y) : x(x), y(y) {}
+    
+        // Friend function can access private members
+        friend void printPoint(const Point2D &p);
+    };
+    
+    void printPoint(const Point2D &p) {
+        std::cout << "Point(" << p.x << ", " << p.y << ")\n";
+    }
+    
+    int main() {
+        Point2D p(3, 4);
+        printPoint(p);   // friend function can access
+    }
+    ```
+
+* Friend Class Example
+
+    ```cpp
+    class Engine {
+    private:
+        int hp = 100;
+        // Car can access private members of Engine
+        friend class Car;
+    public:
+        Engine() = default;
+    };
+    
+    class Car {
+    public:
+        void showEnginePower(const Engine& e) {
+            std::cout << "Engine horsepower: " << e.hp << "\n";
+        }
+    };
+    
+    int main() {
+        Engine eW;
+        Car cW;
+        cW.showEnginePower(eW);
+        return 0;
+    }
+    ```
 
 ### Constexpr (C++11)
 
