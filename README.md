@@ -491,7 +491,34 @@ If your class doesn’t manage resources directly (no raw new/delete, no manual 
 
 ### [SFINAE](https://wikipedia.org/wiki/Substitution_failure_is_not_an_error) (_Substitution failure is not an error_)
 
+```cpp
+// Primary template: enabled only if T::size() is valid
+template <typename T>
+auto print_size(const T& x, int)
+-> decltype(x.size(), void())   //SFINAE - based return type checks. Try to evaluate x.size()
+                                //If x.size() is valid -> the whole expression becomes void
+                                //If x.size() is NOT valid -> substitution fails -> SFINAE kicks in
+{
+    std::cout << "x.size() = " << x.size() << "\n";
+}
 
+// Fallback overload: used if above substitution fails
+template <typename T>
+void print_size(const T&, ...)   // ellipsis = lowest priority match
+{
+    std::cout << "No size() available.\n";
+}
+int main() {
+    std::vector<int> ivec{ 2, 3, 5, 7, 11 };
+    std::string str = "Hello World!.";
+    int ival = 42;
+
+    print_size(ivec, 0);   // has size() -> prints size
+    print_size(str, 0);    // has size() -> prints size
+    print_size(ival, 0);   // no size() -> fallback
+    return 0;
+}
+```
 
 ## Framework and Libraries
 
