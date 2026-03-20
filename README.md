@@ -50,6 +50,7 @@
  - [Language Concepts](#language-concepts)   
     - [Virtual Methods](#virtual-methods)
     - [Forward Declaration](#forward-declaration)
+    - [Special Member Functions](#special-member-functions)
 - [Language Concepts](#language-concepts)
 - [Framework and Libraries](#framework-and-libraries)
 - [Performance Analysis and Debugging Tool](#performance-analysis-and-debugging-tool)
