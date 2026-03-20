@@ -448,7 +448,53 @@ int main() {
 ### [Virtual Tables](https://wikipedia.org/wiki/Virtual_method_table)
 
 ### [Forward Declaration](https://wikipedia.org/wiki/Forward_declaration)
-
+* Basic Forward Declaration of `a Class`
+   
+    ```cpp
+    #include <iostream>
+    
+    // Forward declaration
+    class Engine;
+    
+    class Car {
+    public:
+        void run(Engine* en); // OK: pointer doesn't require full definition
+    };
+    
+    // Full definition of Engine
+    class Engine {
+    public:
+        void print_spec() { std::cout << "Engine Spec:..\n"; }
+    };
+    
+    void Car::run(Engine* e) {
+        e->print_spec(); // OK now, since Engine is fully defined
+    }
+    
+    int main() {
+        Car c1;
+        Engine e1;
+        c1.run(&e1);
+        return 0;
+    }
+    ```
+* Forward Declaration of `Functions`
+    ```cpp    
+    void foo(); // forward declaration
+    
+    void bar() {
+        foo();  // valid because foo is declared
+    }
+    
+    void foo() {
+        bar();
+    }
+    int main() {
+        foo();
+        bar();
+        return 0;
+    }
+    ```
 ### [Special Member Functions](https://wikipedia.org/wiki/Special_member_functions)
 * (Default) Constructor:
 * Copy Constructor:
