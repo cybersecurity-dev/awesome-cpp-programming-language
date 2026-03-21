@@ -414,8 +414,35 @@ static_assert(fac10 == factorial(10), "factorial failed\n");
 
 ## Language Concepts
 
-### auto (_Automatic Type Deduction_)
+### [auto](https://cppreference.com/w/cpp/language/auto.html) (_Automatic Type Deduction_)
 
+**`auto`** tells the compiler: "`Deduce the variable's type automatically from the initializer.`"
+
+* Iterators (most common)
+```cpp
+std::vector<int> v = {2,3,5};
+auto it = v.begin();  // replaces vector<int>::iterator
+```
+* Lambda functions
+```cpp
+auto printType = [](auto t) { std::cout << typeid(t).name() << std::endl; };
+```
+
+* Range-based loops 
+```cpp
+std::vector<int> ivec = {2,3,5};
+for (auto v : ivec) {
+    std::cout << v << std::endl;
+}
+```
+
+* Working with templates
+```cpp
+template <typename T>
+void printType(T param) {
+    std::cout << typeid(param).name() << std::endl;
+}
+```
 ### ADL (_Argument Dependent Lookup_)
 
 ### [Name Mangling](https://wikipedia.org/wiki/Name_mangling)
