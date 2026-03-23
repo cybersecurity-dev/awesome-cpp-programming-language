@@ -70,6 +70,11 @@
 ## Containers
 
 ### [Vector](https://cppreference.com/w/cpp/container/vector.html)
+
+```cpp
+#include <vector>
+template<class T, class Allocator = std::allocator<T>> class vector;
+```
 Except for the `std::vector<bool>` partial specialization, the elements are stored contiguously, which means that elements can be accessed not only through iterators, but also using offsets to regular pointers to elements. 
 
 ```cpp
@@ -83,7 +88,13 @@ std::for_each(ivec.crbegin(), ivec.crend(), print);
 ```
 
 ### [List](https://cppreference.com/w/cpp/container/list.html)
+```cpp
+#include <list>
+template<class T, class Allocator = std::allocator<T>> class list;
+```
+
 `std::list` is a container that supports constant time insertion and removal of elements from anywhere in the container. Fast random access is **not supported**. It is usually implemented as a **`doubly-linked list`**. Compared to `std::forward_list` this container provides bidirectional iteration capability while being less space efficient.
+
 ```cpp
 std::list<int> ilist = { 5, 7, 11, 13 };
 for (int n : ilist)
@@ -106,7 +117,11 @@ for (auto it = ilist.cbegin(); it != ilist.cend(); ++it) {
 
 
 ### [Array](https://cppreference.com/w/cpp/container/array.html)
-
+```cpp
+#include <array>
+template<class T, std::size_t N> struct array;
+```
+`std::array` is a container that encapsulates fixed size arrays. 
 
 ### [Forward List](https://cppreference.com/w/cpp/container/forward_list.html)
 
