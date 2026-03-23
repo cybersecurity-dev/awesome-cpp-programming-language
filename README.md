@@ -27,6 +27,7 @@
     - [Vector](#vector)
     - [List](#list)
     - [Deque](#deque)
+    - [Array](#array)
 - [Pointers and References](#pointers-and-references)
     - [std::unique_ptr](#unique_ptr)
 - [Expressions](#expressions)
