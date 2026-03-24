@@ -643,6 +643,26 @@ int main() {
 
 ## Framework and Libraries
 
+### [Algorithm](https://cppreference.com/w/cpp/algorithm.html)
+
+| Category | Description | Reference |
+|---------|-------------|-------------------|
+| **Non‑modifying sequence operations** | Algorithms that read but do not change data | [Non‑modifying](https://cppreference.com/w/cpp/algorithm.html#Non-modifying_sequence_operations) |
+| modifying sequence operation | Algorithms that modify elements | [Modifying](https://cppreference.com/w/cpp/algorithm#Modifying_sequence_operations) | **Copy / Move operations** | copy, move, copy_if, copy_n, move_backward… | [Copy / Move](https://cppreference.com/w/cpp/algorithm) |
+| **Swap operations** | swap, iter_swap, swap_ranges | [Swap operations](https://cppreference.com/w/cpp/algorithm.html#Swap_operations) |
+| **Transformation operations** | replace, replace_if, transform | [Transformation](https://cppreference.com/w/cpp/algorithm#Transformation_operations) |
+| **Generation operations** | fill, fill_n, generate, generate_n | [Generation](https://cppreference.com/w/cpp/algorithm#Generation_operations) |
+| **Removing operations** | remove, remove_if, unique, unique_copy | [Removing](https://cppreference.com/w/cpp/algorithm#Removing_operations) |
+| **Order‑changing operations** | reverse, rotate, shuffle, shift_left… | [Order‑changing](https://cppreference.com/w/cpp/algorithm#Order-changing_operations) | Random sampling | [sample](https://cppreference.com/w/cpp/algorithm.html) |
+| **Partitioning operations** | partition, is_partitioned, partition_point | [Partitioning](https://cppreference.com/w/cpp/algorithm#Partitioning_operations) |
+| **Sorting operations** | sort, stable_sort, partial_sort, nth_element | [Sorting](https://cppreference.com/w/cpp/algorithm#Sorting_operations) |
+| **Binary search operations** | lower_bound, upper_bound, equal_range | [Binary search](https://cppreference.com/w/cpp/algorithm#Binary_search_operations_.28on_partitioned_ranges.29) | set_union, set_intersection, set_difference | [Set operations](https://cppreference.com/w/cpp/algorithm#Set_operations_on) operations (sorted ranges)** | merge, inplace_merge | [Merge](https://cppreference.com/w/cpp/algorithm#Merge_operations) operations** | make_heap, push_heap, pop_heap, sort_heap | [Heap](https://cppreference.com/w/cpp/algorithm##Heap_operations) |
+| **Min/Max operations** | min, max, clamp, minmax_element | [Min/Max](https://cppreference.com/w/cpp/algorithm#Minimum.2Fmaximum_operations) | lexicographical_compare, compare_three_way | [Lexicographical compare](https://cppreference.com/w/cpp/algorithm#Lexicographical_comparison_operations) | next_permutation, prev_permutation | [Permutation](https://cppreference.com/w/cpp/algorithm#Permutation_operations) |
+| **Numeric operations** | iota, inner_product, reduce, transform_reduce | [Numeric Operations](https://cppreference.com/w/cpp/algorithm#Numeric_operations)
+| **Uninitialized memory ops** | uninitialized_copy, uninitialized_fill… | [Uninitialized memory](https://cppreference.com/w/cpp/algorithm#Operations_on_uninitialized_memory) |
+| **C library algorithms** | qsort, bsearch | [C library algorithms](https://cppreference.com/w/cpp/algorithm#C_library) |
+
+
 ### Testing and Mocking Framework
 - [Catch2](https://github.com/catchorg/Catch2) - A modern, C++ native, test framework for unit-tests, TDD and BDD - using C++14, C++17 and later.
 - [Google Test](https://github.com/google/googletest) - [Google](https://google.github.io/googletest/) Testing and Mocking Framework
