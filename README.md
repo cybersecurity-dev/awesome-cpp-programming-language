@@ -57,7 +57,6 @@
         - [The Rule of Five](#the-rule-of-five)
         - [The Rule of Zero](#the-rule-of-zero)
     - [SFINE](#sfinae-substitution-failure-is-not-an-error)
-- [Language Concepts](#language-concepts)
 - [Framework and Libraries](#framework-and-libraries)
 - [Performance Analysis and Debugging Tool](#performance-analysis-and-debugging-tool)
 - [Package Managers](#package-managers)
@@ -150,6 +149,48 @@ Press any key to close this window . . .
 
 ### [Inplace Vector](https://cppreference.com/w/cpp/container/inplace_vector.html)
 
+
+## [Class](https://cppreference.com/w/cpp/language/classes.html)
+
+### class/struct types
+
+### union types
+
+### Injected-class-name
+
+### Class property specifiers (C++26)
+
+### Members
+#### Data members
+#### Static members
+#### The this pointer
+#### Nested classes
+#### Member templates
+#### Bit-fields
+#### using-declarations
+#### Member functions
+#### Member access specifiers
+#### Constructors and member initializer lists
+#### Default member initializer (C++11)
+#### friend specifier
+#### explicit specifier
+#### Converting constructor
+
+### Special member functions
+#### Default constructor
+#### Copy constructor
+#### Move constructor (C++11)
+#### Copy assignment operator
+#### Move assignment operator (C++11)
+#### Destructor
+
+### Inheritance
+#### Base and derived classes
+#### Empty base optimization (EBO)
+#### Virtual member functions
+#### Pure virtual functions and abstract classes
+#### override specifier (C++11)
+#### final specifier (C++11)
 
 ## Pointers and References
 
