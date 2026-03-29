@@ -47,6 +47,7 @@
     - [Copy on Write](#copy-on-write)
 - [Specifiers](#specifiers)
     - [Friend](#friend)
+ - [Compile Time Specifiers](#compile-time-specifiers)
     - [Constexpr (C++11)](#constexpr-c11)
  - [Language Concepts](#language-concepts)   
     - [Virtual Methods](#virtual-methods)
@@ -477,6 +478,12 @@ The `friend` declaration appears in a class body and grants a function or anothe
     }
     ```
 
+### Consteval (C++20)
+
+### Constinit (C++20)
+
+## Compile Time Specifiers
+
 ### Constexpr (C++11)
 
 The **`constexpr`** specifier declares that it is possible to evaluate the value of the entities at `compile time`. 
@@ -492,10 +499,6 @@ constexpr int fac5 = factorial(5);
 static constexpr int const& fac10 = 3628800;
 static_assert(fac10 == factorial(10), "factorial failed\n");
 ```
-
-### Consteval (C++20)
-
-### Constinit (C++20)
 
 ## Language Concepts
 
