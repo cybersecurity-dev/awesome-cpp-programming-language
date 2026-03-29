@@ -500,6 +500,10 @@ static constexpr int const& fac10 = 3628800;
 static_assert(fac10 == factorial(10), "factorial failed\n");
 ```
 
+### [Consteval](https://cppreference.com/w/cpp/language/consteval.html) (C++20)
+
+### 
+
 ## Language Concepts
 
 ### [auto](https://cppreference.com/w/cpp/language/auto.html) (_Automatic Type Deduction_)
