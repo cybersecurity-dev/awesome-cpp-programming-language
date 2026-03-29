@@ -149,7 +149,6 @@ Press any key to close this window . . .
 
 ### [Inplace Vector](https://cppreference.com/w/cpp/container/inplace_vector.html)
 
-
 ## [Class](https://cppreference.com/w/cpp/language/classes.html)
 
 ### class/struct types
@@ -411,9 +410,16 @@ Or install it to a system directory like /usr/local/lib.
 
 ### Typedef
 
-### Inline
+### [Inline](https://cppreference.com/w/cpp/language/inline.html)
 
-### Virtual Function Specifier
+The **inline** specifier, when used in a function's decl-specifier-seq, declares the function to be an inline function. A function defined entirely inside a class/struct/union definition, whether it's a member function or a non-member friend function, is implicitly an inline function unless it is attached to a named module (`since C++20`)
+
+### [Virtual Function Specifier](https://cppreference.com/w/cpp/language/virtual.html)
+
+Specifies that a non-static member function is **virtual** and `supports dynamic dispatch`. It may only appear in the decl-specifier-seq of the initial declaration of a non-static member function
+
+
+
 
 ### Explicit Function Specifier
 
