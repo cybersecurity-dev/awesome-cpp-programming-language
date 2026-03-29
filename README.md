@@ -49,6 +49,8 @@
     - [Friend](#friend)
  - [Compile Time Specifiers](#compile-time-specifiers)
     - [Constexpr (C++11)](#constexpr-c11)
+    - [Consteval (C++20)](#consteval-c20)
+    - [Constinit (C++20)](#constinit-c20)
  - [Language Concepts](#language-concepts)   
     - [Virtual Methods](#virtual-methods)
     - [Forward Declaration](#forward-declaration)
@@ -478,10 +480,6 @@ The `friend` declaration appears in a class body and grants a function or anothe
     }
     ```
 
-### Consteval (C++20)
-
-### Constinit (C++20)
-
 ## Compile Time Specifiers
 
 ### Constexpr (C++11)
@@ -502,7 +500,7 @@ static_assert(fac10 == factorial(10), "factorial failed\n");
 
 ### [Consteval](https://cppreference.com/w/cpp/language/consteval.html) (C++20)
 
-### 
+### [Constinit](https://cppreference.com/w/cpp/language/constinit.html) (C++20)
 
 ## Language Concepts
 
