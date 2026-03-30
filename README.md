@@ -30,6 +30,7 @@
     - [Array](#array)
 - [Pointers and References](#pointers-and-references)
     - [std::unique_ptr](#unique_ptr)
+    - [std::shared_ptr](#shared_ptr)
 - [Expressions](#expressions)
     - [Lambda Expressions](#lambda-expressions)
     - [Value Categories](#value-categories)
@@ -45,6 +46,11 @@
     - [CRTP](#crtp-curiously-recurring-template-pattern)
     - [Erase-Remove](#erase-remove)
     - [Copy on Write](#copy-on-write)
+    - [Rule of N](#rule-of-n)    
+        - [The Rule of Three](#the-rule-of-three)
+        - [The Rule of Five](#the-rule-of-five)
+        - [The Rule of Zero](#the-rule-of-zero)
+    - [SFINE](#sfinae-substitution-failure-is-not-an-error)
 - [Specifiers](#specifiers)
     - [Friend](#friend)
  - [Compile Time Specifiers](#compile-time-specifiers)
@@ -55,11 +61,7 @@
     - [Virtual Methods](#virtual-methods)
     - [Forward Declaration](#forward-declaration)
     - [Special Member Functions](#special-member-functions)
-    - [Rule of N](#rule-of-n)    
-        - [The Rule of Three](#the-rule-of-three)
-        - [The Rule of Five](#the-rule-of-five)
-        - [The Rule of Zero](#the-rule-of-zero)
-    - [SFINE](#sfinae-substitution-failure-is-not-an-error)
+
 - [Framework and Libraries](#framework-and-libraries)
 - [Performance Analysis and Debugging Tool](#performance-analysis-and-debugging-tool)
 - [Package Managers](#package-managers)
@@ -90,6 +92,8 @@ std::cout << std::endl;
 std::for_each(ivec.crbegin(), ivec.crend(), print);
 ```
 
+---
+
 ### [List](https://cppreference.com/w/cpp/container/list.html)
 ```cpp
 #include <list>
@@ -116,8 +120,11 @@ for (auto it = ilist.cbegin(); it != ilist.cend(); ++it) {
 }
 ```
 
+---
+
 ### [Deque](https://cppreference.com/w/cpp/container/deque.html)
 
+---
 
 ### [Array](https://cppreference.com/w/cpp/container/array.html)
 ```cpp
@@ -148,56 +155,23 @@ outputs:
 Press any key to close this window . . .
 ```
 
+---
+
 ### [Forward List](https://cppreference.com/w/cpp/container/forward_list.html)
+
+---
 
 ### [Inplace Vector](https://cppreference.com/w/cpp/container/inplace_vector.html)
 
-## [Class](https://cppreference.com/w/cpp/language/classes.html)
-
-### class/struct types
-
-### union types
-
-### Injected-class-name
-
-### Class property specifiers (C++26)
-
-### Members
-#### Data members
-#### Static members
-#### The this pointer
-#### Nested classes
-#### Member templates
-#### Bit-fields
-#### using-declarations
-#### Member functions
-#### Member access specifiers
-#### Constructors and member initializer lists
-#### Default member initializer (C++11)
-#### friend specifier
-#### explicit specifier
-#### Converting constructor
-
-### Special member functions
-#### Default constructor
-#### Copy constructor
-#### Move constructor (C++11)
-#### Copy assignment operator
-#### Move assignment operator (C++11)
-#### Destructor
-
-### Inheritance
-#### Base and derived classes
-#### Empty base optimization (EBO)
-#### Virtual member functions
-#### Pure virtual functions and abstract classes
-#### override specifier (C++11)
-#### final specifier (C++11)
+---
+---
 
 ## Pointers and References
 
 ### [Smart Pointers](https://wikipedia.org/wiki/Smart_pointer)
 Smart pointers enable automatic, exception-safe, object lifetime management.
+
+---
 
 #### [unique_ptr](https://cppreference.com/w/cpp/memory/unique_ptr.html)
 `std::unique_ptr` is a smart pointer that owns (**is responsible for**) and manages another object via a pointer and subsequently disposes of that object when the unique_ptr goes out of scope.
@@ -210,11 +184,20 @@ Smart pointers enable automatic, exception-safe, object lifetime management.
 } //destructing uptr destroys the ClassName object.
 ```
 
+---
+
 #### [shared_ptr](https://cppreference.com/w/cpp/memory/shared_ptr.html)
+
+---
 
 #### [weak_ptr](https://cppreference.com/w/cpp/memory/weak_ptr.html)
 
+---
+---
+
 ## [Expressions](https://cppreference.com/w/cpp/language/expressions.html)
+
+---
 
 ### [Lambda Expressions](https://cppreference.com/w/cpp/language/lambda.html)
 
@@ -238,12 +221,16 @@ int main()
 }
 ```
 
+---
+
 ### [Value Categories](https://cppreference.com/w/cpp/language/value_category.html)
 
 - a `glvalue` ("generalized" lvalue) is an expression whose evaluation determines the identity of an object or function.
 - a `prvalue` ("pure" rvalue) is an expression whose evaluation.
 - an `xvalue` (an "eXpiring" value) is a glvalue that denotes an object whose resources can be reused.
 - an `lvalue` is a glvalue that is not an xvalue.
+
+---
 
 #### [lvalue](https://wikipedia.org/wiki/Value_(computer_science)#lrvalue)
 
@@ -260,44 +247,126 @@ int main() {
     void (*ptrfoo)() = &foo;
 ```
 
+---
+
 #### rvalue
+
+---
 
 #### glvalue
 a glvalue (`"generalized"` lvalue) is an expression whose evaluation determines the identity of an object or function.
 
+---
 
 #### prvalue
+
+---
+
 #### xvalue
+
+---
+---
+
+## [Class](https://cppreference.com/w/cpp/language/classes.html)
+
+### class/struct types
+
+### union types
+
+### Injected-class-name
+
+### Class property specifiers (C++26)
+
+### Members
+#### Data members
+#### Static members
+#### The this pointer
+#### Nested classes
+#### Member templates
+#### Bit-fields
+#### using-declarations
+#### Member functions
+#### Member access specifiers
+#### Constructors and member initializer lists
+#### Default member initializer (C++11)
+#### `friend` specifier
+#### `explicit` specifier
+#### `Converting` constructor
+
+### Special member functions
+#### `Default constructor`
+#### `Copy constructor`
+#### `Move constructor` (C++11)
+#### `Copy assignment` operator
+#### `Move assignment` operator (C++11)
+#### `Destructor`
+
+### Inheritance
+
+#### Base and derived classes
+#### Empty base optimization (EBO)
+#### Virtual member functions
+#### Pure virtual functions and abstract classes
+#### override specifier (C++11)
+#### final specifier (C++11)
+
+---
+---
+
+## Multithreading
+
+---
+---
+
+## [Template Metaprogramming](https://wikipedia.org/wiki/Template_metaprogramming)
+* [Variadic Template](https://wikipedia.org/wiki/Variadic_template)
+* [Expression Templates](https://wikipedia.org/wiki/Expression_templates)
+* [Compile-Time Function Execution](https://wikipedia.org/wiki/Compile-time_function_execution)
+
+---
+---
+
+## Exception Handling
+
+---
+---
 
 ## Functions
 
 ### [Coroutines](https://cppreference.com/w/cpp/language/coroutines.html)
 A coroutine is a function that can suspend execution to be resumed later. Coroutines are **stackless**: they suspend execution by returning to the caller, and the data that is required to resume execution is stored separately from the stack. This allows for sequential code that executes asynchronously (`e.g. to handle non-blocking I/O without explicit callbacks`), and also supports algorithms on lazy-computed infinite sequences and other uses.
 
+---
+---
+
 ## Type Casting
+
 ### [static_cast](https://cppreference.com/w/cpp/language/static_cast.html)
 Converts between types using a combination of implicit and user-defined conversions.
+
+---
 
 ### [dynamic_cast](https://cppreference.com/w/cpp/language/dynamic_cast.html)
 Safely converts pointers and references to classes up, down, and sideways along the inheritance hierarchy.
 
+---
+
 ### [const_cast](https://cppreference.com/w/cpp/language/const_cast.html)
 Converts between types with different cv-qualification.
 
+---
+
 ### [reinterpret_cast](https://cppreference.com/w/cpp/language/reinterpret_cast.html)
 
-## Multithreading
-## [Template Metaprogramming](https://wikipedia.org/wiki/Template_metaprogramming)
-* [Variadic Template](https://wikipedia.org/wiki/Variadic_template)
-* [Expression Templates](https://wikipedia.org/wiki/Expression_templates)
-* [Compile-Time Function Execution](https://wikipedia.org/wiki/Compile-time_function_execution)
-
-## Exception Handling
+---
+---
 
 ## [Idioms](https://wikipedia.org/wiki/Programming_idiom)
 
 ### [RAII](https://wikipedia.org/wiki/Resource_acquisition_is_initialization) (_Resource acquisition is initialization_)
 Resource Acquisition Is Initialization or RAII, is a C++ programming technique which binds the life cycle of a resource that must be acquired before use (_allocated heap memory, thread of execution, open socket, open file, locked mutex, disk space, database connection—anything that exists in limited supply_) to the lifetime of an object. RAII guarantees that the resource is available to any function that may access the object. It also guarantees that all resources are released when the lifetime of their controlling object ends, in reverse order of acquisition.
+
+---
 
 ### [PIMPL](https://cppreference.com/w/cpp/language/pimpl.html) (_Pointer to Implementation_)
 **`"Pointer to implementation"`** or `"pImpl"` is a C++ programming technique that removes implementation details of a class from its object representation by placing them in a separate class, accessed through an opaque pointer. The PIMPL idiom is used to:
@@ -402,29 +471,107 @@ LD_LIBRARY_PATH=. ./app.out
 ```
 Or install it to a system directory like /usr/local/lib.
 
+---
+
 ### [CRTP](https://wikipedia.org/wiki/Curiously_recurring_template_pattern) (_Curiously recurring template pattern_)
+
+---
 
 ### [Erase-Remove](https://wikipedia.org/wiki/Erase%E2%80%93remove_idiom)
 
+---
+
 ### [Copy on Write](https://wikipedia.org/wiki/Copy-on-write)
 
+---
+
+### [Rule of N](https://cppreference.com/w/cpp/language/rule_of_three.html)
+
+---
+
+#### [The Rule of Three](https://wikipedia.org/wiki/Rule_of_three_(C%2B%2B_programming))
+The `Rule of Three in C++ says`: If a class manages a resource (_e.g., raw new-allocated memory, file handle, socket_), and you need to define any one of these:
+* Destructor
+* Copy constructor
+* Copy assignment operator
+
+---
+
+#### The Rule of Five
+The Rule of Five (C++11 and later) extends the Rule of Three.
+If your class manages a resource (_e.g., heap memory, file descriptors, sockets, mutexes_), and you define any of the special member functions, you typically need to implement all five:
+* Destructor
+* Copy constructor
+* Copy assignment operator
+* Move constructor
+* Move assignment operator
+
+---
+
+#### The Rule of Zero
+If your class doesn’t manage resources directly (no raw new/delete, no manual file handles, etc.), you don’t need to write any of the special member functions (_destructor, copy/move ctor, copy/move assignment_).
+
+---
+
+### [SFINAE](https://wikipedia.org/wiki/Substitution_failure_is_not_an_error) (_Substitution failure is not an error_)
+
+```cpp
+// Primary template: enabled only if T::size() is valid
+template <typename T>
+auto print_size(const T& x, int)
+-> decltype(x.size(), void())   //SFINAE - based return type checks. Try to evaluate x.size()
+                                //If x.size() is valid -> the whole expression becomes void
+                                //If x.size() is NOT valid -> substitution fails -> SFINAE kicks in
+{
+    std::cout << "x.size() = " << x.size() << "\n";
+}
+
+// Fallback overload: used if above substitution fails
+template <typename T>
+void print_size(const T&, ...)   // ellipsis = lowest priority match
+{
+    std::cout << "No size() available.\n";
+}
+int main() {
+    std::vector<int> ivec{ 2, 3, 5, 7, 11 };
+    std::string str = "Hello World!.";
+    int ival = 42;
+
+    print_size(ivec, 0);   // has size() -> prints size
+    print_size(str, 0);    // has size() -> prints size
+    print_size(ival, 0);   // no size() -> fallback
+    return 0;
+}
+```
+
+---
+---
 
 ## Specifiers
 
+---
+
 ### Typedef
+
+---
 
 ### [Inline](https://cppreference.com/w/cpp/language/inline.html)
 
 The **inline** specifier, when used in a function's decl-specifier-seq, declares the function to be an inline function. A function defined entirely inside a class/struct/union definition, whether it's a member function or a non-member friend function, is implicitly an inline function unless it is attached to a named module (`since C++20`)
 
+---
+
 ### [Virtual Function Specifier](https://cppreference.com/w/cpp/language/virtual.html)
+
+---
 
 Specifies that a non-static member function is **virtual** and `supports dynamic dispatch`. It may only appear in the decl-specifier-seq of the initial declaration of a non-static member function
 
-
-
+---
 
 ### Explicit Function Specifier
+
+---
 
 ### [Friend](https://cppreference.com/w/cpp/language/friend.html)
 
@@ -480,6 +627,9 @@ The `friend` declaration appears in a class body and grants a function or anothe
     }
     ```
 
+---
+---
+
 ## Compile Time Specifiers
 
 ### Constexpr (C++11)
@@ -498,9 +648,16 @@ static constexpr int const& fac10 = 3628800;
 static_assert(fac10 == factorial(10), "factorial failed\n");
 ```
 
+---
+
 ### [Consteval](https://cppreference.com/w/cpp/language/consteval.html) (C++20)
 
+---
+
 ### [Constinit](https://cppreference.com/w/cpp/language/constinit.html) (C++20)
+
+---
+---
 
 ## Language Concepts
 
@@ -533,11 +690,18 @@ void printType(T param) {
     std::cout << typeid(param).name() << std::endl;
 }
 ```
+
 ### ADL (_Argument Dependent Lookup_)
+
+---
 
 ### [Name Mangling](https://wikipedia.org/wiki/Name_mangling)
 
+---
+
 ### [RTTI](https://wikipedia.org/wiki/Run-time_type_information) (_Run-time type information_) 
+
+---
 
 ### [Virtual Methods](https://wikipedia.org/wiki/Virtual_function)
 Virtual functions enable `runtime polymorphism` (dynamic dispatch). When you call a virtual function through a base class pointer or reference, C++ decides at runtime which overridden function to execute based on the actual (dynamic) type of the object.
@@ -572,7 +736,10 @@ int main() {
     return 0;
 }
 ```
+
 ### [Virtual Tables](https://wikipedia.org/wiki/Virtual_method_table)
+
+---
 
 ### [Forward Declaration](https://wikipedia.org/wiki/Forward_declaration)
 * Basic Forward Declaration of `a Class`
@@ -642,56 +809,8 @@ Signatures of the special member functions:
 | Destructor               | `virtual ~MyClass();`                                    |
 
 
-### [Rule of N](https://cppreference.com/w/cpp/language/rule_of_three.html)
-
-#### [The Rule of Three](https://wikipedia.org/wiki/Rule_of_three_(C%2B%2B_programming))
-The `Rule of Three in C++ says`: If a class manages a resource (_e.g., raw new-allocated memory, file handle, socket_), and you need to define any one of these:
-* Destructor
-* Copy constructor
-* Copy assignment operator
-
-#### The Rule of Five
-The Rule of Five (C++11 and later) extends the Rule of Three.
-If your class manages a resource (_e.g., heap memory, file descriptors, sockets, mutexes_), and you define any of the special member functions, you typically need to implement all five:
-* Destructor
-* Copy constructor
-* Copy assignment operator
-* Move constructor
-* Move assignment operator
-
-#### The Rule of Zero
-If your class doesn’t manage resources directly (no raw new/delete, no manual file handles, etc.), you don’t need to write any of the special member functions (_destructor, copy/move ctor, copy/move assignment_).
-
-### [SFINAE](https://wikipedia.org/wiki/Substitution_failure_is_not_an_error) (_Substitution failure is not an error_)
-
-```cpp
-// Primary template: enabled only if T::size() is valid
-template <typename T>
-auto print_size(const T& x, int)
--> decltype(x.size(), void())   //SFINAE - based return type checks. Try to evaluate x.size()
-                                //If x.size() is valid -> the whole expression becomes void
-                                //If x.size() is NOT valid -> substitution fails -> SFINAE kicks in
-{
-    std::cout << "x.size() = " << x.size() << "\n";
-}
-
-// Fallback overload: used if above substitution fails
-template <typename T>
-void print_size(const T&, ...)   // ellipsis = lowest priority match
-{
-    std::cout << "No size() available.\n";
-}
-int main() {
-    std::vector<int> ivec{ 2, 3, 5, 7, 11 };
-    std::string str = "Hello World!.";
-    int ival = 42;
-
-    print_size(ivec, 0);   // has size() -> prints size
-    print_size(str, 0);    // has size() -> prints size
-    print_size(ival, 0);   // no size() -> fallback
-    return 0;
-}
-```
+---
+---
 
 ## Framework and Libraries
 
@@ -719,19 +838,31 @@ int main() {
 - [Catch2](https://github.com/catchorg/Catch2) - A modern, C++ native, test framework for unit-tests, TDD and BDD - using C++14, C++17 and later.
 - [Google Test](https://github.com/google/googletest) - [Google](https://google.github.io/googletest/) Testing and Mocking Framework
 
+---
+
 ### Network
 - [POCO](https://github.com/pocoproject/poco) - The [POCO C++](https://pocoproject.org/) Libraries are powerful cross-platform open-source C++ libraries for building network- and internet-based applications that run on desktop, server, mobile, IoT, and embedded systems.
 
+---
+
 ### RPC (_Remote Procedure Call_)
 - [gRPC](https://github.com/grpc/grpc) - A high performance, open source universal [RPC framework](https://grpc.io/docs/languages/cpp/quickstart/).
+
+---
 
 ## Performance Analysis and Debugging Tool
 - [Orbit](https://github.com/google/orbit) - Orbit is a standalone profiler and debugging tool for Windows and Linux. Its main purpose is to help developers understand and visualize the execution flow of a complex application.
 - [Tracy Profiler](https://github.com/wolfpld/tracy) - A real time, nanosecond resolution, remote telemetry, hybrid frame and sampling [profiler](https://tracy.nereid.pl/) for games and other applications.
 
+---
+---
+
 ## Package Managers
 - [vcpkg](https://github.com/microsoft/vcpkg) - [vcpkg](https://vcpkg.io/) is a free C/C++ package manager for acquiring and managing libraries.
 - [Conan](https://github.com/conan-io/conan) - The open-source C and C++ package [manager](https://conan.io/).
+
+---
+---
 
 ## Severals
 - [Doxygen](https://doxygen.nl/) -  Doxygen is a widely-used documentation generator tool in software development.
@@ -740,31 +871,71 @@ int main() {
 - [pybind11](https://github.com/pybind/pybind11) - Seamless [operability](https://pybind11.readthedocs.io/en/stable/) between C++11 and Python.
 - [spdlog](https://github.com/gabime/spdlog) - Fast C++ logging library.
 
+---
+---
 
 ## Standarts
 
 ### [C++17](https://wikipedia.org/wiki/C%2B%2B17) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/playlist?list=PL9V4Zu3RroiUQgR_mRQUqaaqMr0dqOMx9&si=eeZgwJukCid0gg_I)
 
+---
+
 #### [std::variant](https://cppreference.com/w/cpp/utility/variant.html)
+
+---
+
 #### [std::basic_string_view](https://cppreference.com/w/cpp/string/basic_string_view.html)
+
+---
+
 #### [std::any](https://cppreference.com/w/cpp/utility/any.html)
+
+---
 
 ### [C++20](https://wikipedia.org/wiki/C%2B%2B20) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/playlist?list=PL9V4Zu3RroiVw5A7UAF80nrGjqa4YHH5V&si=Qs-HYOl3nWr1aW_S)
 
+---
+
 #### [Modules](https://cppreference.com/w/cpp/language/modules.html)
+
+---
+
 #### [std::atomic_ref](https://cppreference.com/w/cpp/atomic/atomic_ref.html)
+
+---
+
 #### [std::barrier](https://cppreference.com/w/cpp/thread/barrier.html)
+
+---
+
 #### [std::jthread](https://cppreference.com/w/cpp/thread/jthread.html)
+
+---
+
 #### [std::latch](https://cppreference.com/w/cpp/thread/latch.html)
+
+---
 
 ### [C++23](https://wikipedia.org/wiki/C%2B%2B23) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/playlist?list=PL9V4Zu3RroiUDgZNWp3jEfVCekz3zyqlR&si=9ydOxTrqNAMecWHX)
 
+---
+
 #### [std::generator](https://cppreference.com/w/cpp/coroutine/generator.html)
+
+---
+
 #### [std::mdspan](https://cppreference.com/w/cpp/container/mdspan.html)
+
+---
 
 ### [C++26](https://wikipedia.org/wiki/C%2B%2B26) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/playlist?list=PL9V4Zu3RroiUMnYOdxU8Qyl58Y8d65csM&si=UT8y6spBSphgR1le)
 
+---
+
 #### [Contracts](https://cppreference.com/w/cpp/language/contracts.html)
+
+---
+---
 
 ## Compiler/Debugger
 - [MSVC & GCC & Clang](https://github.com/cybersecurity-dev/PowerShell-Toolkit/#install-c-cpp) - installation step of MSVC/GCC/Clang compiler in **Windows**
