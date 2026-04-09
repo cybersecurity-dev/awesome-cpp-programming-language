@@ -166,6 +166,8 @@ Press any key to close this window . . .
 ---
 ---
 
+[🔼 Back to top](#awesome-c-programming-language-)
+
 ## Pointers and References
 
 ### [Smart Pointers](https://wikipedia.org/wiki/Smart_pointer)
@@ -267,6 +269,8 @@ a glvalue (`"generalized"` lvalue) is an expression whose evaluation determines 
 ---
 ---
 
+[🔼 Back to top](#awesome-c-programming-language-)
+
 ## [Class](https://cppreference.com/w/cpp/language/classes.html)
 
 ### class/struct types
@@ -318,6 +322,8 @@ a glvalue (`"generalized"` lvalue) is an expression whose evaluation determines 
 ---
 ---
 
+[🔼 Back to top](#awesome-c-programming-language-)
+
 ## [Template Metaprogramming](https://wikipedia.org/wiki/Template_metaprogramming)
 * [Variadic Template](https://wikipedia.org/wiki/Variadic_template)
 * [Expression Templates](https://wikipedia.org/wiki/Expression_templates)
@@ -325,6 +331,8 @@ a glvalue (`"generalized"` lvalue) is an expression whose evaluation determines 
 
 ---
 ---
+
+[🔼 Back to top](#awesome-c-programming-language-)
 
 ## Exception Handling
 
@@ -360,6 +368,8 @@ Converts between types with different cv-qualification.
 
 ---
 ---
+
+[🔼 Back to top](#awesome-c-programming-language-)
 
 ## [Idioms](https://wikipedia.org/wiki/Programming_idiom)
 
@@ -659,6 +669,8 @@ static_assert(fac10 == factorial(10), "factorial failed\n");
 ---
 ---
 
+[🔼 Back to top](#awesome-c-programming-language-)
+
 ## Language Concepts
 
 ### [auto](https://cppreference.com/w/cpp/language/auto.html) (_Automatic Type Deduction_)
@@ -864,6 +876,8 @@ Signatures of the special member functions:
 ---
 ---
 
+[🔼 Back to top](#awesome-c-programming-language-)
+
 ## Severals
 - [Doxygen](https://doxygen.nl/) -  Doxygen is a widely-used documentation generator tool in software development.
 - [{fmt}](https://github.com/fmtlib/fmt) - A modern formatting [library](https://fmt.dev/).
@@ -873,6 +887,8 @@ Signatures of the special member functions:
 
 ---
 ---
+
+[🔼 Back to top](#awesome-c-programming-language-)
 
 ## Standarts
 
