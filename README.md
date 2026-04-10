@@ -61,7 +61,7 @@
     - [Virtual Methods](#virtual-methods)
     - [Forward Declaration](#forward-declaration)
     - [Special Member Functions](#special-member-functions)
-
+- [Concurrency & Parallelism & Multithreading](#concurrency--parallelism--multithreading)
 - [Framework and Libraries](#framework-and-libraries)
 - [Performance Analysis and Debugging Tool](#performance-analysis-and-debugging-tool)
 - [Package Managers](#package-managers)
@@ -820,6 +820,10 @@ Signatures of the special member functions:
 | Move assignment operator | `MyClass& operator=(MyClass&& other) noexcept;`          |
 | Destructor               | `virtual ~MyClass();`                                    |
 
+---
+---
+
+## [Concurrency](https://wikipedia.org/wiki/Concurrency_(computer_science)) & [Parallelism](https://wikipedia.org/wiki/Parallel_computing) & [Multithreading](https://wikipedia.org/wiki/Multithreading_(computer_architecture))
 
 ---
 ---
