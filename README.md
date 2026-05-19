@@ -21,14 +21,14 @@
     <img src="https://github.com/cybersecurity-dev/cybersecurity-dev/blob/main/assets/bar.gif">
 </p>
 
-
 ## 📖 Contents
 - [Containers](#containers)
     - [Vector](#vector)
     - [List](#list)
     - [Deque](#deque)
     - [Array](#array)
-- [Pointers and References](#pointers-and-references)
+- [C++ Initialization](#-c-initialization)
+- [Pointers and References](#-pointers-and-references)
     - [std::unique_ptr](#unique_ptr)
     - [std::shared_ptr](#shared_ptr)
 - [Expressions](#expressions)
@@ -168,7 +168,78 @@ Press any key to close this window . . .
 
 [🔼 Back to top](#awesome-c-programming-language-)
 
-## Pointers and References
+
+## 🧠 C++ Initialization
+
+| Initialization Type   | Syntax Example     | Description                          | Key Notes                          |
+|----------------------|------------------|--------------------------------------|------------------------------------|
+| Direct Initialization | int ival(10);       | Value passed using parentheses       | Used in constructors               |
+| Copy Initialization   | int ival = 10;      | Value assigned at creation           | Most common style                  |
+| List Initialization   | int ival{10};       | Uses {} braces                       | Prevents narrowing conversions     |
+| Value Initialization  | int ival{};         | Initializes to default value         | int → 0, float → 0.0               |
+| Default Initialization| int ival;           | No initialization                    | Contains garbage value (local var) |
+| Reference Initialization | int &rival = ival;   | Reference bound to variable          | Must be initialized                |
+| Pointer Initialization | int *ptr = nullptr;| Pointer set to safe null             | Avoids garbage addresses           |
+
+### 1. Direct Initialization
+```cpp
+int ival(10);
+```
+* Value is passed directly in parentheses
+* Common in constructors and classes
+
+### 2. Copy Initialization
+```cpp
+int ival = 10;
+```
+* Looks like assignment, but happens at creation time
+* Compiler may create a temporary object and copy it
+
+### 3. List Initialization (C++11)
+```cpp
+int ival{10};
+```
+* Uses curly braces {}
+* Prevents narrowing conversions
+```cpp
+int ival1 = 3.5;   // ✅ OK    (value becomes 3)
+int ival2{3.5};    // ❌ ERROR (narrowing not allowed)
+```
+
+### 4. Value Initialization
+```cpp
+int ival{};
+```
+* Initializes to default value
+* For int → 0
+```cpp
+int ival{};   // a = 0
+float fval{}; // b = 0.0
+```
+
+### 5. Default Initialization
+```cpp
+int ival;
+```
+* No initialization
+* Value is garbage (undefined) if it's a local variable
+
+### 6. Reference Initialization
+```cpp
+int ival = 10;
+int &rival = ival;
+```
+* Reference must be initialized at creation
+* Cannot exist without referring to something
+
+### 7. Pointer Initialization
+```cpp
+int *ptr = nullptr;
+```
+* Good practice to initialize pointers
+* Avoids garbage addresses
+
+## 🔷 Pointers and References
 
 ### [Smart Pointers](https://wikipedia.org/wiki/Smart_pointer)
 Smart pointers enable automatic, exception-safe, object lifetime management.
@@ -972,5 +1043,8 @@ You can access the my other awesome lists [here](https://cyberthreatdefence.com/
 
 ### Contributors
 [Thanks goes to these contributors](https://github.com/cybersecurity-dev/awesome-cpp-programming-language/graphs/contributors)!
+
+### License
+[![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](http://creativecommons.org/publicdomain/zero/1.0)
 
 [🔼 Back to top](#awesome-c-programming-language-)
