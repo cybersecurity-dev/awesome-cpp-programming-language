@@ -344,9 +344,12 @@ a glvalue (`"generalized"` lvalue) is an expression whose evaluation determines 
 
 ## [Class](https://cppreference.com/w/cpp/language/classes.html)
 
-### class/struct types
+### Class/Struct Types
 
-### union types
+
+### Union Types
+
+A union is a special class type that can hold only one of its non-static data members at a time.
 
 ### Injected-class-name
 
