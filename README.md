@@ -76,48 +76,19 @@
 
 ### [Vector](https://cppreference.com/w/cpp/container/vector.html)
 
-```cpp
-#include <vector>
-template<class T, class Allocator = std::allocator<T>> class vector;
-```
 Except for the `std::vector<bool>` partial specialization, the elements are stored contiguously, which means that elements can be accessed not only through iterators, but also using offsets to regular pointers to elements. 
 
 ```cpp
 std::vector<int> ivec = { 1, 2, 3, 4, 5 };
-//lambda expression
-auto print = [](const int& n) { std::cout << n << ' '; };
-    
-std::for_each(ivec.cbegin(), ivec.cend(), print);
-std::cout << std::endl;
-std::for_each(ivec.crbegin(), ivec.crend(), print);
 ```
 
 ---
 
 ### [List](https://cppreference.com/w/cpp/container/list.html)
-```cpp
-#include <list>
-template<class T, class Allocator = std::allocator<T>> class list;
-```
-
 `std::list` is a container that supports constant time insertion and removal of elements from anywhere in the container. Fast random access is **not supported**. It is usually implemented as a **`doubly-linked list`**. Compared to `std::forward_list` this container provides bidirectional iteration capability while being less space efficient.
 
 ```cpp
 std::list<int> ilist = { 5, 7, 11, 13 };
-for (int n : ilist)
-std::cout << n << ", ";
-std::cout<<"\n-----------------\n";
-    
-ilist.push_front(0);
-ilist.push_back(-1);
-std::for_each(ilist.cbegin(), ilist.cend(), [](auto val) { std::cout << val << ", "; });
-std::cout << "\n-----------------\n";
-    
-//insert with using initializer list
-ilist.insert(ilist.cend(), { 4, 3, 2, 1 });
-for (auto it = ilist.cbegin(); it != ilist.cend(); ++it) {
-    std::cout << *it << ", ";
-}
 ```
 
 ---
@@ -127,32 +98,10 @@ for (auto it = ilist.cbegin(); it != ilist.cend(); ++it) {
 ---
 
 ### [Array](https://cppreference.com/w/cpp/container/array.html)
-```cpp
-#include <array>
-template<class T, std::size_t N> struct array;
-```
 `std::array` is a container that encapsulates fixed size arrays. 
 
 ```cpp
 std::array<int, 4> iarray1{ {5, 2, 3, 7} };
-std::sort(iarray1.begin(), iarray1.end());
-
-for (const auto& i : iarray1)
-    std::cout << i << ' ';
-std::cout << std::endl;
-
-std::array<int, 3> iarray2 = { 7, 11, 13 };
-std::ranges::reverse_copy(iarray2, std::ostream_iterator<int>(std::cout, " "));
-std::cout << std::endl;
-return 0;
-```
-outputs:
-
-```powershell
-2 3 5 7
-13 11 7
-...exited with code 0 (0x0).
-Press any key to close this window . . .
 ```
 
 ---
