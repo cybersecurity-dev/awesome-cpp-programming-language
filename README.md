@@ -82,6 +82,7 @@ Except for the `std::vector<bool>` partial specialization, the elements are stor
 std::vector<int> ivec = { 1, 2, 3, 4, 5 };
 ```
 You can find more details at the [**link**](https://github.com/cybersecurity-dev/awesome-cpp-programming-language/blob/main/notebook/Containers%20Library/Sequence%20Containers/vector.md).
+
 ---
 
 ### [List](https://cppreference.com/w/cpp/container/list.html)
@@ -95,6 +96,8 @@ You can find more details at the [**link**](https://github.com/cybersecurity-dev
 ---
 
 ### [Deque](https://cppreference.com/w/cpp/container/deque.html)
+
+You can find more details at the [**link**](https://github.com/cybersecurity-dev/awesome-cpp-programming-language/blob/main/notebook/Containers%20Library/Sequence%20Containers/deque.md)
 
 ---
 
@@ -110,9 +113,13 @@ You can find more details at the [**link**](https://github.com/cybersecurity-dev
 
 ### [Forward List](https://cppreference.com/w/cpp/container/forward_list.html)
 
+You can find more details at the [**link**](https://github.com/cybersecurity-dev/awesome-cpp-programming-language/blob/main/notebook/Containers%20Library/Sequence%20Containers/forward_list.md)
+
 ---
 
 ### [Inplace Vector](https://cppreference.com/w/cpp/container/inplace_vector.html)
+
+You can find more details at the [**link**](https://github.com/cybersecurity-dev/awesome-cpp-programming-language/blob/main/notebook/Containers%20Library/Sequence%20Containers/inplace_vector.md)
 
 ---
 ---
