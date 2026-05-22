@@ -81,7 +81,7 @@ Except for the `std::vector<bool>` partial specialization, the elements are stor
 ```cpp
 std::vector<int> ivec = { 1, 2, 3, 4, 5 };
 ```
-
+You can find more details at the [**link**](https://github.com/cybersecurity-dev/awesome-cpp-programming-language/blob/main/notebook/Containers%20Library/Sequence%20Containers/vector.md).
 ---
 
 ### [List](https://cppreference.com/w/cpp/container/list.html)
@@ -90,6 +90,7 @@ std::vector<int> ivec = { 1, 2, 3, 4, 5 };
 ```cpp
 std::list<int> ilist = { 5, 7, 11, 13 };
 ```
+You can find more details at the [**link**](https://github.com/cybersecurity-dev/awesome-cpp-programming-language/blob/main/notebook/Containers%20Library/Sequence%20Containers/list.md)
 
 ---
 
@@ -103,6 +104,7 @@ std::list<int> ilist = { 5, 7, 11, 13 };
 ```cpp
 std::array<int, 4> iarray1{ {5, 2, 3, 7} };
 ```
+You can find more details at the [**link**](https://github.com/cybersecurity-dev/awesome-cpp-programming-language/blob/main/notebook/Containers%20Library/Sequence%20Containers/array.md)
 
 ---
 
