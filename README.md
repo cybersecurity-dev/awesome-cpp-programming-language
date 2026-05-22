@@ -22,57 +22,137 @@
 </p>
 
 ## 📖 Contents
-- [Containers](#containers)
+- [**`Awesome`** C++ Programming Language ](#awesome-c-programming-language-)
+  - [📖 Contents](#-contents)
+  - [Containers](#containers)
     - [Vector](#vector)
     - [List](#list)
     - [Deque](#deque)
     - [Array](#array)
-- [C++ Initialization](#-c-initialization)
-- [Pointers and References](#-pointers-and-references)
-    - [std::unique_ptr](#unique_ptr)
-    - [std::shared_ptr](#shared_ptr)
-- [Expressions](#expressions)
+    - [Forward List](#forward-list)
+    - [Inplace Vector](#inplace-vector)
+  - [🧠 C++ Initialization](#-c-initialization)
+  - [🔷 Pointers and References](#-pointers-and-references)
+    - [Smart Pointers](#smart-pointers)
+      - [unique\_ptr](#unique_ptr)
+      - [shared\_ptr](#shared_ptr)
+      - [weak\_ptr](#weak_ptr)
+  - [Expressions](#expressions)
     - [Lambda Expressions](#lambda-expressions)
     - [Value Categories](#value-categories)
-- [Functions](#functions)
-- [Type Casting](#type-casting)
-    - [static_cast](#static_cast)
-    - [dynamic_cast](#dynamic_cast)
-    - [const_cast](#const_cast)
-    - [reinterpret_cast](#reinterpret_cast) 
-- [Idioms](#idioms)
-    - [RAII](#raii-resource-acquisition-is-initialization)
-    - [PIMPL](#pimpl-pointer-to-implementation)
-    - [CRTP](#crtp-curiously-recurring-template-pattern)
+      - [lvalue](#lvalue)
+      - [rvalue](#rvalue)
+      - [glvalue](#glvalue)
+      - [prvalue](#prvalue)
+      - [xvalue](#xvalue)
+  - [Class](#class)
+    - [Class/Struct Types](#classstruct-types)
+    - [Union Types](#union-types)
+    - [Injected-class-name](#injected-class-name)
+    - [Class property specifiers (C++26)](#class-property-specifiers-c26)
+    - [Members](#members)
+      - [Data members](#data-members)
+      - [Static members](#static-members)
+      - [The this pointer](#the-this-pointer)
+      - [Nested classes](#nested-classes)
+      - [Member templates](#member-templates)
+      - [Bit-fields](#bit-fields)
+      - [using-declarations](#using-declarations)
+      - [Member functions](#member-functions)
+      - [Member access specifiers](#member-access-specifiers)
+      - [Constructors and member initializer lists](#constructors-and-member-initializer-lists)
+      - [Default member initializer (C++11)](#default-member-initializer-c11)
+      - [`friend` specifier](#friend-specifier)
+      - [`explicit` specifier](#explicit-specifier)
+      - [`Converting` constructor](#converting-constructor)
+    - [Special member functions](#special-member-functions)
+      - [`Default constructor`](#default-constructor)
+      - [`Copy constructor`](#copy-constructor)
+      - [`Move constructor` (C++11)](#move-constructor-c11)
+      - [`Copy assignment` operator](#copy-assignment-operator)
+      - [`Move assignment` operator (C++11)](#move-assignment-operator-c11)
+      - [`Destructor`](#destructor)
+    - [Inheritance](#inheritance)
+      - [Base and derived classes](#base-and-derived-classes)
+      - [Empty base optimization (EBO)](#empty-base-optimization-ebo)
+      - [Virtual member functions](#virtual-member-functions)
+      - [Pure virtual functions and abstract classes](#pure-virtual-functions-and-abstract-classes)
+      - [override specifier (C++11)](#override-specifier-c11)
+      - [final specifier (C++11)](#final-specifier-c11)
+  - [Multithreading](#multithreading)
+  - [Template Metaprogramming](#template-metaprogramming)
+  - [Exception Handling](#exception-handling)
+  - [Functions](#functions)
+    - [Coroutines](#coroutines)
+  - [Type Casting](#type-casting)
+    - [static\_cast](#static_cast)
+    - [dynamic\_cast](#dynamic_cast)
+    - [const\_cast](#const_cast)
+    - [reinterpret\_cast](#reinterpret_cast)
+  - [Idioms](#idioms)
+    - [RAII (_Resource acquisition is initialization_)](#raii-resource-acquisition-is-initialization)
+    - [PIMPL (_Pointer to Implementation_)](#pimpl-pointer-to-implementation)
+    - [CRTP (_Curiously recurring template pattern_)](#crtp-curiously-recurring-template-pattern)
     - [Erase-Remove](#erase-remove)
     - [Copy on Write](#copy-on-write)
-    - [Rule of N](#rule-of-n)    
-        - [The Rule of Three](#the-rule-of-three)
-        - [The Rule of Five](#the-rule-of-five)
-        - [The Rule of Zero](#the-rule-of-zero)
-    - [SFINE](#sfinae-substitution-failure-is-not-an-error)
-- [Specifiers](#specifiers)
+    - [Rule of N](#rule-of-n)
+      - [The Rule of Three](#the-rule-of-three)
+      - [The Rule of Five](#the-rule-of-five)
+      - [The Rule of Zero](#the-rule-of-zero)
+    - [SFINAE (_Substitution failure is not an error_)](#sfinae-substitution-failure-is-not-an-error)
+  - [Specifiers](#specifiers)
+    - [Typedef](#typedef)
+    - [Inline](#inline)
+    - [Virtual Function Specifier](#virtual-function-specifier)
+    - [Explicit Function Specifier](#explicit-function-specifier)
     - [Friend](#friend)
- - [Compile Time Specifiers](#compile-time-specifiers)
+  - [Compile Time Specifiers](#compile-time-specifiers)
     - [Constexpr (C++11)](#constexpr-c11)
     - [Consteval (C++20)](#consteval-c20)
     - [Constinit (C++20)](#constinit-c20)
- - [Language Concepts](#language-concepts)   
+  - [Language Concepts](#language-concepts)
+    - [auto (_Automatic Type Deduction_)](#auto-automatic-type-deduction)
+    - [ADL (_Argument Dependent Lookup_)](#adl-argument-dependent-lookup)
+    - [Name Mangling](#name-mangling)
+    - [RTTI (_Run-time type information_)](#rtti-run-time-type-information)
     - [Virtual Methods](#virtual-methods)
+    - [Virtual Tables](#virtual-tables)
     - [Forward Declaration](#forward-declaration)
-    - [Special Member Functions](#special-member-functions)
-- [Concurrency & Parallelism & Multithreading](#concurrency--parallelism--multithreading)
-- [Framework and Libraries](#framework-and-libraries)
-- [Performance Analysis and Debugging Tool](#performance-analysis-and-debugging-tool)
-- [Package Managers](#package-managers)
-- [Severals](#severals)
-- [Standarts](#standarts)
-- [My Other Awesome Lists](#my-other-awesome-lists)
-- [Contributing](#contributing)
-- [Contributors](#contributors)
+    - [Special Member Functions](#special-member-functions-1)
+  - [Concurrency \& Parallelism \& Multithreading](#concurrency--parallelism--multithreading)
+  - [Framework and Libraries](#framework-and-libraries)
+    - [Algorithm](#algorithm)
+    - [Testing and Mocking Framework](#testing-and-mocking-framework)
+    - [Network](#network)
+    - [RPC (_Remote Procedure Call_)](#rpc-remote-procedure-call)
+  - [Performance Analysis and Debugging Tool](#performance-analysis-and-debugging-tool)
+  - [Package Managers](#package-managers)
+  - [Severals](#severals)
+  - [Standarts](#standarts)
+    - [C++17 ](#c17-)
+      - [std::variant](#stdvariant)
+      - [std::basic\_string\_view](#stdbasic_string_view)
+      - [std::any](#stdany)
+    - [C++20 ](#c20-)
+      - [Modules](#modules)
+      - [std::atomic\_ref](#stdatomic_ref)
+      - [std::barrier](#stdbarrier)
+      - [std::jthread](#stdjthread)
+      - [std::latch](#stdlatch)
+    - [C++23 ](#c23-)
+      - [std::generator](#stdgenerator)
+      - [std::mdspan](#stdmdspan)
+    - [C++26 ](#c26-)
+      - [Contracts](#contracts)
+  - [Compiler/Debugger](#compilerdebugger)
+  - [](#)
+    - [My Other Awesome Lists](#my-other-awesome-lists)
+    - [Contributing](#contributing)
+    - [Contributors](#contributors)
+    - [License](#license)
 
 
-## Containers
+## [Containers](https://github.com/cybersecurity-dev/awesome-cpp-programming-language/tree/main/notebook/Containers%20Library)
 
 ### [Vector](https://cppreference.com/w/cpp/container/vector.html)
 
@@ -126,7 +206,6 @@ You can find more details at the [**link**](https://github.com/cybersecurity-dev
 
 [🔼 Back to top](#awesome-c-programming-language-)
 
-
 ## 🧠 C++ Initialization
 
 | Initialization Type   | Syntax Example     | Description                          | Key Notes                          |
@@ -139,63 +218,7 @@ You can find more details at the [**link**](https://github.com/cybersecurity-dev
 | Reference Initialization | int &rival = ival;   | Reference bound to variable          | Must be initialized                |
 | Pointer Initialization | int *ptr = nullptr;| Pointer set to safe null             | Avoids garbage addresses           |
 
-### 1. Direct Initialization
-```cpp
-int ival(10);
-```
-* Value is passed directly in parentheses
-* Common in constructors and classes
-
-### 2. Copy Initialization
-```cpp
-int ival = 10;
-```
-* Looks like assignment, but happens at creation time
-* Compiler may create a temporary object and copy it
-
-### 3. List Initialization (C++11)
-```cpp
-int ival{10};
-```
-* Uses curly braces {}
-* Prevents narrowing conversions
-```cpp
-int ival1 = 3.5;   // ✅ OK    (value becomes 3)
-int ival2{3.5};    // ❌ ERROR (narrowing not allowed)
-```
-
-### 4. Value Initialization
-```cpp
-int ival{};
-```
-* Initializes to default value
-* For int → 0
-```cpp
-int ival{};   // a = 0
-float fval{}; // b = 0.0
-```
-
-### 5. Default Initialization
-```cpp
-int ival;
-```
-* No initialization
-* Value is garbage (undefined) if it's a local variable
-
-### 6. Reference Initialization
-```cpp
-int ival = 10;
-int &rival = ival;
-```
-* Reference must be initialized at creation
-* Cannot exist without referring to something
-
-### 7. Pointer Initialization
-```cpp
-int *ptr = nullptr;
-```
-* Good practice to initialize pointers
-* Avoids garbage addresses
+You can find more details at the [**link**](https://github.com/cybersecurity-dev/awesome-cpp-programming-language/tree/main/notebook/C%2B%2B%20Language/Initialization)
 
 ## 🔷 Pointers and References
 
