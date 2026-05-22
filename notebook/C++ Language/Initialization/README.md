@@ -1,5 +1,15 @@
 # Initialization
 
+| Initialization Type   | Syntax Example     | Description                          | Key Notes                          |
+|----------------------|------------------|--------------------------------------|------------------------------------|
+| Direct Initialization | int ival(10);       | Value passed using parentheses       | Used in constructors               |
+| Copy Initialization   | int ival = 10;      | Value assigned at creation           | Most common style                  |
+| List Initialization   | int ival{10};       | Uses {} braces                       | Prevents narrowing conversions     |
+| Value Initialization  | int ival{};         | Initializes to default value         | int → 0, float → 0.0               |
+| Default Initialization| int ival;           | No initialization                    | Contains garbage value (local var) |
+| Reference Initialization | int &rival = ival;   | Reference bound to variable          | Must be initialized                |
+| Pointer Initialization | int *ptr = nullptr;| Pointer set to safe null             | Avoids garbage addresses           |
+
 ## 1. Direct Initialization
 ```cpp
 int ival(10);
