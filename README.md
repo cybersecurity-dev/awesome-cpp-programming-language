@@ -348,6 +348,8 @@ Converts between types with different cv-qualification.
 
 ## [Idioms](https://wikipedia.org/wiki/Programming_idiom)
 
+You can find more details at the [**link**](https://github.com/cybersecurity-dev/awesome-cpp-programming-language/blob/main/notebook/C%2B%2B%20Language/Idioms)
+
 ### [RAII](https://wikipedia.org/wiki/Resource_acquisition_is_initialization) (_Resource acquisition is initialization_)
 Resource Acquisition Is Initialization or RAII, is a C++ programming technique which binds the life cycle of a resource that must be acquired before use (_allocated heap memory, thread of execution, open socket, open file, locked mutex, disk space, database connection—anything that exists in limited supply_) to the lifetime of an object. RAII guarantees that the resource is available to any function that may access the object. It also guarantees that all resources are released when the lifetime of their controlling object ends, in reverse order of acquisition.
 
@@ -359,6 +361,8 @@ Resource Acquisition Is Initialization or RAII, is a C++ programming technique w
 - reduce compile-time dependencies,
 - provide binary compatibility,
 - keep your class ABI stable.
+
+You can find more details at the [**link**](https://github.com/cybersecurity-dev/awesome-cpp-programming-language/blob/main/notebook/C%2B%2B%20Language/Idioms/PIMPL.md)
 
 ### [CRTP](https://wikipedia.org/wiki/Curiously_recurring_template_pattern) (_Curiously recurring template pattern_)
 
