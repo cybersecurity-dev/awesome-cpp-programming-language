@@ -6,8 +6,8 @@
 ## 4. [Fold Expressions](./Fold%20Expressions.md)
 ## 5. `constexpr` if ([`if constexpr`](./constexpr%20if.md))
 ## 6. Class Template Argument Deduction ([`CTAD`](./Class%20Template%20Argument%20Deduction.md))
-## 7. `std::optional`
-## 8. `std::variant`
-## 9. `std::any`
-## 10. `std::string_view`
+## 7. [`std::optional`](./std-optional.md)
+## 8. [`std::variant`](./std-variant.md)
+## 9. [`std::any`](./std-any.md)
+## 10. [`std::string_view`](./std-string_view.md)
 ## 11. std::filesystem
