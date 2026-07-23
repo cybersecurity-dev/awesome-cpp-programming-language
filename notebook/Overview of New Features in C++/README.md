@@ -1,7 +1,7 @@
 # Overview of New Features in **`C++17/20/23/26`**
 
 ## 1. `C++17`:
-### 1.1. [Structured Bindings](./New%20Features%20in%20C++17/New%20Features%20in%20C++17/%20Structured%20Bindings.md)
+### 1.1. [Structured Bindings](./New%20Features%20in%20C++17/%20Structured%20Bindings.md)
 ### 1.2. `if` and `switch` with Initializer
 ### 1.3. `inline` Variables
 ### 1.4. [Fold Expressions](./New%20Features%20in%20C++17/Fold%20Expressions.md)
