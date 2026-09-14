@@ -1,6 +1,6 @@
 $schema: https://api.gitbook.com/gitbook-docs.yaml
 site:
-  title: C++ProgrammingNotebook
+  title: CppNotebook
   structure:
     - type: space
       key: notebook
