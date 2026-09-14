@@ -1,11 +1,11 @@
 $schema: https://api.gitbook.com/gitbook-docs.yaml
 site:
-  title: C++ Programming Notebook
+  title: C++ProgrammingNotebook
   structure:
     - type: space
       key: notebook
       title: Notebook
-      path: /
+      path: undefined
       default: true
       content:
-        directory: .
+        directory: ./
